@@ -12,3 +12,4 @@ wordpress/wp-content/themes/*
 /npm-debug.log
 /wordpress/wp-content/themes/espacep/assets/images.safecopy
 /-$
+/source/scripts/jquery.flexnav.js

@@ -1,13 +1,12 @@
 doctype html
 html(lang='fr')
     head
-        title Notre statut - Espace P…
+        title Centre de Santé intégré d’Angleur
         include template/_meta.pug
-    body.no-js.no-main.statut
+    body.no-js.home
         header.header
-            div.header__wrap-title
-                h1.header__title(aria-level="1") Notre statut - Espace P…
-            include template/_header
+            include template/_menu
+            h1.header__title(aria-level="1") Centre de Santé intégré d’Angleur
         div.site-content
             main
 
@@ -15,6 +14,7 @@ html(lang='fr')
 
 
 
-                include template/_footer
-                include template/_scripts
+        include template/_footer
+        include template/_scripts
+
 
