@@ -98,7 +98,7 @@ gulp.task('clean', function () {
 gulp.task('images', function () {
     return gulp.src(imagesOpts.in)
     /*.pipe(destclean(imagesOpts.out))*/
-        .pipe(gulp.dest(imagesOpts.in))
+        .pipe(newer(imagesOpts.out))
         .pipe(size({title: 'Images size before compression: ', showFiles: true}))
         .pipe(tiny())
         .pipe(imagemin())

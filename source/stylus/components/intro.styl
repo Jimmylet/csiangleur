@@ -1,0 +1,50 @@
+.home
+  &__title
+    {visuallyhidden}
+  .intro
+    height 28.15em
+    background-image url("../images/homeheader@2x.jpg")
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
+    text-align: center
+    &__logo
+      display: block
+      padding-top 3.5em // 70px
+      & svg
+        display: block
+        margin: 0 auto
+    &__title
+      display: block
+      font-family: oxygenfonts
+      color color-white
+      font-weight: bold
+      font-size 2em // 40px
+      letter-spacing 1.33px
+      margin-top 0.500em // 20px
+      margin-bottom 0.625em // 25px
+    &__paragraph
+      max-width: 27.750em // 555px
+      margin: 0 auto
+      font-family oxygenfonts
+      font-size 1em
+      color color-white
+      letter-spacing 0.3px
+      line-height: 1.6
+    &__button
+      display inline-block
+      color color-white
+      font-size 0.900em // 18px
+      letter-spacing .5px
+      background-color color-darkblue
+      padding 0.444em 2.944em // 8px 53px
+      border-radius 2px
+      margin-top 3.889em // 70px
+
+// Image arrondie pour grands ecrans
+@media screen and (min-width: 1441px)
+  .home
+    .intro
+      background: url('../images/homeheaderLarge.jpg');
+      background-size 563px cover
+
