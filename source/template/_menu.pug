@@ -1,25 +1,31 @@
 nav.menu
-    ul.flexnav
-        li
-            a(href="index.html") Accueil
-        li Maison médicale
-            ul
-                li
-                    a(href="#") Maison médicale au forfait
-                li
-                    a(href="#") Services et équipe
-        li Fonctionnement
-            ul
-                li
-                    a(href="#") Inscription
-                li
-                    a(href="#") Désinscription
-        li
-            a(href="#") Service de garde
-        li
-            a(href="#") Fiches pratiques
-        li
-            a(href="#") Liens
-        li
-            a(href="#") Contact
+    div.menu-button
+        div.menu-button__wrap
+            span.menu-button__label Menu
+            div.nav-icon
+                span
+                span
+                span
+                span
+    div.flexnav
+        div.flexnav__wrap
+            a.flexnav__link(href="index.html") Accueil
+            div.flexnav__dropwrap.flexnav__dropwrap1
+                span.flexnav__dropbtn Maison médicale
+                div.flexnav__dropcnt.flexnav__dropcnt1
+                    a.flexnav__dropcnt__link(href="#") Maison médicale au forfait
+                    a.flexnav__dropcnt__link(href="#") Services et équipe
+            div.flexnav__dropwrap.flexnav__dropwrap2
+                span.flexnav__dropbtn Fonctionnement
+                div.flexnav__dropcnt.flexnav__dropcnt2
+                    a.flexnav__dropcnt__link(href="#") Inscription
+                    a.flexnav__dropcnt__link(href="#") Désinscription
+            a.flexnav__link(href="#") Service de garde
+            a.flexnav__link(href="#") Fiches pratiques
+            a.flexnav__link(href="#") Liens
+            a.flexnav__link(href="#") Contact
+a.menu__logo(href="index.html")
+    img(src="./images/svg/logomenu.svg" width="62" height="62" alt="")
+
+
 
