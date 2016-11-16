@@ -40,6 +40,11 @@
       padding 0.444em 2.944em // 8px 53px
       border-radius 2px
       margin-top 3.889em // 70px
+      transition .3s background-color ease
+      &:hover
+      &:focus
+        background-color color-lightblue
+        transition .3s background-color ease
 
 // Image arrondie pour grands ecrans
 @media screen and (min-width: 1441px)
@@ -48,3 +53,155 @@
       background: url('../images/homeheaderLarge.jpg');
       background-size 563px cover
 
+// Services de qualités
+.home
+  .services
+    margin 5em 0 3.5em 0
+    text-align: center
+    &__title
+      display: block
+      text-align: center
+      font bold 1em oxygenfonts
+      letter-spacing 0.89px
+      text-transform: uppercase
+    &__wrap
+      max-width 48em // 960px
+      margin: 3.250em auto 2.250em auto // 65px 45px
+      text-align: center
+      display flex
+      justify-content space-between
+    &__item
+      max-width 15.25em // 305px
+      padding 30px 10px 80px 10px
+      background-color lightgrey
+      background-size cover
+      &__title
+        margin 33px 10px 22px 10px
+        font bold 0.900em oxygenfonts // 18px
+        letter-spacing 1.07px
+        text-transform: uppercase
+        & b
+          color color-darkblue
+          letter-spacing 1.07px
+      &__paragraph
+        line-height: 1.6
+    &__item:nth-child(1)
+      background url("../images/home_psycho.jpg") no-repeat center center
+    &__item:nth-child(2)
+      background url("../images/home_medecine.jpg") no-repeat center center
+    &__item:nth-child(3)
+      background url("../images/home_infirmier.jpg") no-repeat center center
+    &__button
+      display: inline-block
+      font bold 0.900em oxygenfonts
+      color color-white
+      background-color color-darkblue
+      padding 20px 88px
+      border-radius 2px
+      letter-spacing 0.8px
+      transition .3s background-color ease
+      &:hover
+      &:focus
+        transition .3s background-color ease
+        background-color color-lightblue
+
+/************************************\
+  ANIMATION HEART
+\************************************/
+#heartline
+  animation 9s linear 2s infinite heartline
+
+
+@keyframes heartline{
+  0%{
+    stroke-dasharray: 146;
+    stroke-dashoffset: 438;
+  }
+  15%{
+    stroke-dasharray: 146;
+    stroke-dashoffset: 300;
+  }
+  50%{
+    stroke-dasharray: 146;
+    stroke-dashoffset: 300;
+  }
+  65%{
+    stroke-dasharray: 146;
+    stroke-dashoffset: 188;
+  }
+  100% {
+    stroke-dasharray: 146;
+    stroke-dashoffset: 188;
+  }
+}
+
+#gear1
+  transform-origin 33px 29px
+  animation 10s linear infinite gear1
+
+#gear2
+  transform-origin 40px 42px
+  animation 10s linear infinite gear2
+
+@keyframes gear1{
+  0%{
+    transform: rotate(0deg);
+  }
+  20%{
+    transform: rotate(180deg)
+  }
+  40%{
+    transform rotate(180deg)
+  }
+  60%{
+    transform rotate(0deg)
+  }
+  100%{
+    transform rotate(0deg)
+  }
+
+}
+
+@keyframes gear2{
+  0%{
+    transform: rotate(0deg);
+  }
+  20%{
+    transform: rotate(-180deg);
+  }
+  40%{
+    transform rotate(-180deg)
+  }
+  60%{
+    transform rotate(0deg)
+  }
+  100%{
+    transform rotate(0deg)
+  }
+}
+
+
+#thermo{
+  transform-origin 50% 50%
+  animation 8s ease-in infinite thermo
+}
+
+@keyframes thermo{
+  0%{
+    transform: scaleY(0);
+  }
+  20%{
+    transform: scaleY(18);
+  }
+  40%{
+    transform: scaleY(18);
+  }
+
+  60%{
+    transform: scaleY(0);
+  }
+
+  100%{
+    transform: scaleY(0);
+  }
+}
