@@ -114,63 +114,52 @@ html(lang='fr')
                 div.newsletter__wrap
                     h2.newsletter__title Restez informé sur nos activités
                     span.newsletter__subtitle Inscrivez vous à notre lettre d’informations
-                    ul.newsletter__details
-                        li.newsletter__details__item
-                            svg(id="news-maison", width='56', height='56', xmlns='http://www.w3.org/2000/svg')
-                                defs
-                                    lineargradient#a(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
-                                        stop(stop-color='#2883D2', offset='0%')
-                                        stop(stop-color='#46B6A6', offset='100%')
-                                g(transform='translate(1 1)', stroke-width='2', fill='none', fill-rule='evenodd')
-                                    g(stroke='#46B6A6')
-                                        path(d='M15.17391304 27v13.6363636c0 .7531149.62290825 1.3636364 1.39130435 1.3636364h6.2608696v-9.5454545h8.347826V42h6.2608696c.7683955 0 1.3913044-.6105215 1.3913044-1.3636364V27M11 27v-1.3636364l15.0870561-12.85828633c.5235078-.44617166 1.3023801-.44617166 1.8258879 0L43 25.6363636V27H11z')
-                                    circle(stroke='url(#a)', cx='27', cy='27', r='27')
+                    div.newsletter__animate-content
+                        ul.newsletter__details
+                            li.newsletter__details__item
+                                svg(id="news-maison", width='56', height='56', xmlns='http://www.w3.org/2000/svg')
+                                    defs
+                                        lineargradient#a(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
+                                            stop(stop-color='#2883D2', offset='0%')
+                                            stop(stop-color='#46B6A6', offset='100%')
+                                    g(transform='translate(1 1)', stroke-width='2', fill='none', fill-rule='evenodd')
+                                        g(stroke='#46B6A6')
+                                            path(d='M15.17391304 27v13.6363636c0 .7531149.62290825 1.3636364 1.39130435 1.3636364h6.2608696v-9.5454545h8.347826V42h6.2608696c.7683955 0 1.3913044-.6105215 1.3913044-1.3636364V27M11 27v-1.3636364l15.0870561-12.85828633c.5235078-.44617166 1.3023801-.44617166 1.8258879 0L43 25.6363636V27H11z')
+                                        circle(stroke='url(#a)', cx='27', cy='27', r='27')
+                                p Les infos sur votre maison médicale
+                            li.newsletter__details__item
+                                svg(width='56', height='56', xmlns='http://www.w3.org/2000/svg')
+                                    defs
+                                        lineargradient#a(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
+                                            stop(stop-color='#2883D2', offset='0%')
+                                            stop(stop-color='#46B6A6', offset='100%')
+                                    g(transform='translate(1 1)', stroke-width='2', fill='none', fill-rule='evenodd')
+                                        circle(stroke='url(#a)', cx='27', cy='27', r='27')
+                                        g(transform='translate(15 11)', stroke='#46B6A6')
+                                            path(d='M25 12.6511628C25 22.3255814 12.5 32 12.5 32S0 22.372093 0 12.6511628C0 5.66411855 5.59644066 0 12.5 0 19.4035593 0 25 5.66411855 25 12.6511628z')
+                                            ellipse(cx='12.5', cy='12.6511628', rx='5.14705882', ry='5.20930233')
 
-
-
-
-
-
-
-
-
-
-
-
-                            p Les infos sur votre maison médicale
-                        li.newsletter__details__item
-                            svg(width='56', height='56', xmlns='http://www.w3.org/2000/svg')
-                                defs
-                                    lineargradient#a(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
-                                        stop(stop-color='#2883D2', offset='0%')
-                                        stop(stop-color='#46B6A6', offset='100%')
-                                g(transform='translate(1 1)', stroke-width='2', fill='none', fill-rule='evenodd')
-                                    circle(stroke='url(#a)', cx='27', cy='27', r='27')
-                                    g(transform='translate(15 11)', stroke='#46B6A6')
-                                        path(d='M25 12.6511628C25 22.3255814 12.5 32 12.5 32S0 22.372093 0 12.6511628C0 5.66411855 5.59644066 0 12.5 0 19.4035593 0 25 5.66411855 25 12.6511628z')
-                                        ellipse(cx='12.5', cy='12.6511628', rx='5.14705882', ry='5.20930233')
-
-                            p Les évènements dans votre commune
-                        li.newsletter__details__item
-                            svg(width='56', height='56', xmlns='http://www.w3.org/2000/svg')
-                                defs
-                                    lineargradient#a(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
-                                        stop(stop-color='#2883D2', offset='0%')
-                                        stop(stop-color='#46B6A6', offset='100%')
-                                g(transform='translate(1 1)', stroke-width='2', fill='none', fill-rule='evenodd')
-                                    circle(stroke='url(#a)', cx='27', cy='27', r='27')
-                                    g(transform='translate(11 13)', stroke='#46B6A6')
-                                        ellipse(cx='3.92857143', cy='24.3571429', rx='3.92857143', ry='3.92857143')
-                                        ellipse(cx='16.5', cy='24.3571429', rx='3.92857143', ry='3.92857143')
-                                        ellipse(cx='16.5', cy='3.92857143', rx='3.92857143', ry='3.92857143')
-                                        ellipse(cx='29.0714286', cy='24.3571429', rx='3.92857143', ry='3.92857143')
-                                        path(d='M3.92857143 20.4285714v-4.7142857c0-1.735752 1.40710515-3.1428571 3.14285714-3.1428571H25.9285714c1.7357535 0 3.1428572 1.4071051 3.1428572 3.1428571v4.7142857M16.5 7.85714286V20.4285714')
-                            p Les ateliers que nous proposons
-                    form.newsletter-form
-                        label(for="newsletter") Ecrivez votre adresse email :
-                        input(type="email" name="newsletter" id="newsletter" placeholder="Votre adresse email ici" required).newsletter-form__input
-                        button(type="submit") S’inscrire
-                    span.newsletter-out Vous pourrez vous désinscrire à tout moment.
+                                p Les évènements dans votre commune
+                            li.newsletter__details__item
+                                svg(width='56', height='56', xmlns='http://www.w3.org/2000/svg')
+                                    defs
+                                        lineargradient#a(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
+                                            stop(stop-color='#2883D2', offset='0%')
+                                            stop(stop-color='#46B6A6', offset='100%')
+                                    g(transform='translate(1 1)', stroke-width='2', fill='none', fill-rule='evenodd')
+                                        circle(stroke='url(#a)', cx='27', cy='27', r='27')
+                                        g(transform='translate(11 13)', stroke='#46B6A6')
+                                            ellipse(cx='3.92857143', cy='24.3571429', rx='3.92857143', ry='3.92857143')
+                                            ellipse(cx='16.5', cy='24.3571429', rx='3.92857143', ry='3.92857143')
+                                            ellipse(cx='16.5', cy='3.92857143', rx='3.92857143', ry='3.92857143')
+                                            ellipse(cx='29.0714286', cy='24.3571429', rx='3.92857143', ry='3.92857143')
+                                            path(d='M3.92857143 20.4285714v-4.7142857c0-1.735752 1.40710515-3.1428571 3.14285714-3.1428571H25.9285714c1.7357535 0 3.1428572 1.4071051 3.1428572 3.1428571v4.7142857M16.5 7.85714286V20.4285714')
+                                p Les ateliers que nous proposons
+                        form.newsletter-form
+                            label(for="newsletter") Ecrivez votre adresse email :
+                            input(type="email" name="newsletter" id="newsletter" placeholder="Votre adresse email ici" required).newsletter-form__input
+                            button(type="submit") S’inscrire
+                        span.newsletter-out Vous pourrez vous désinscrire à tout moment.
 
         include template/_footer
         include template/_scripts
