@@ -93,7 +93,7 @@
       background url("../images/home_infirmier.jpg") no-repeat center center
     &__button
       display: inline-block
-      font bold 0.900em oxygenfonts
+      font bold 0.900em oxygenfonts // 18px
       color color-white
       background-color color-darkblue
       padding 20px 88px
@@ -209,106 +209,178 @@
 /************************************\
   FICHES PRATIQUE ET HORAIRES
 \************************************/
+.home
+  .medecine
+    position: relative
+    background-color: color-greybackground
+    padding 5em 1em 2em 1em // 40px 20px
+    margin-top 180px
+    &:before
+      content ""
+      display block
+      background-color color-greybackground
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      transform: skewY(2.5deg);
+      transform-origin: 100% 0;
+      bottom: -26%;
+      z-index -1
 
-.medecine
-  position: relative
-  background-color: color-greybackground
-  padding 5em 1em 2em 1em // 40px 20px
-  margin-top 180px
-  &:before
-    content ""
-    display block
-    background-color color-greybackground
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    transform: skewY(2.5deg);
-    transform-origin: 100% 0;
-    bottom: -26%;
-    z-index -1
-
-  &__wrap
-    max-width 48em // 960px
-    margin 0 auto
-    display flex
-    justify-content space-between
-  &__wrapright
-    max-width 24em // 480px
-  &__title
-    font bold 2em oxygenfonts
-    letter-spacing 1.08px
-    line-height: 1.5
-    margin-bottom 1em
-  &__fiches
-    &__title
-      font normal 1em oxygenfonts
-      letter-spacing 0.54px
-    &__link
-      font normal 0.8em oxygenfonts // 16px
-      transition .3s color ease
-      &:hover
-      &:focus
-        color color-lightblue
-        transition .3s color ease
-    &__link:before
-      content "\e904"
-      margin 0 10px 0 0
-      position: relative
-      top 5px
-      font-family icons
-      display inline-block
-      color color-greenblue
-      font-size: 1.5em
-  &__horaires
-    max-width 16em // 320px
-    background-color color-white
-    border-radius 2px
-    padding 1.5em // 30px
-    &__title
-      display: block
-      font bold 1em oxygenfonts
-      letter-spacing 0.54px
-      line-height 1.5
-      margin-bottom 1.250em // 25px
-    &__item
-      display: flex
+    &__wrap
+      max-width 48em // 960px
+      margin 0 auto
+      display flex
       justify-content space-between
-      margin-bottom 0.650em // 13px
-    &__day
-      font-size 0.800em // 16px
-      letter-spacing 0.43px
-    &__hour
-      color color-darkblue
-      font-family sourcesansprofonts
-      font-weight: 700
-      font-size: 0.8em // 16px
-    &__garde
-      font 100 0.8em sourcesansprofonts
-      margin-bottom 2.500em // 40px
-      & a
-        font-size: 1em
-        color color-darkblue
-        font-weight: bold
+    &__wrapright
+      max-width 24em // 480px
+    &__title
+      font bold 2em oxygenfonts
+      letter-spacing 1.08px
+      line-height: 1.5
+      margin-bottom 1em
+    &__fiches
+      &__title
+        font normal 1em oxygenfonts
+        letter-spacing 0.54px
+      &__link
+        font normal 0.8em oxygenfonts // 16px
         transition .3s color ease
         &:hover
         &:focus
           color color-lightblue
           transition .3s color ease
-    &__button
-      display: inline-block
-      width 100%
-      text-align: center
-      background-color color-darkblue
-      color color-white
-      font bold 0.8em oxygenfonts // 16px
-      letter-spacing 0.48px
+      &__link:before
+        content "\e904"
+        margin 0 10px 0 0
+        position: relative
+        top 5px
+        font-family icons
+        display inline-block
+        color color-greenblue
+        font-size: 1.5em
+    &__horaires
+      max-width 16em // 320px
+      background-color color-white
       border-radius 2px
-      padding 0.625em // 10px
-      transition .3s background-color ease
-      &:hover
-      &:focus
-        background-color color-lightblue
+      padding 1.5em // 30px
+      &__title
+        display: block
+        font bold 1em oxygenfonts
+        letter-spacing 0.54px
+        line-height 1.5
+        margin-bottom 1.250em // 25px
+      &__item
+        display: flex
+        justify-content space-between
+        margin-bottom 0.650em // 13px
+      &__day
+        font-size 0.800em // 16px
+        letter-spacing 0.43px
+      &__hour
+        color color-darkblue
+        font-family sourcesansprofonts
+        font-weight: 700
+        font-size: 0.8em // 16px
+      &__garde
+        font 100 0.8em sourcesansprofonts
+        margin-bottom 2.500em // 40px
+        & a
+          font-size: 1em
+          color color-darkblue
+          font-weight: bold
+          transition .3s color ease
+          &:hover
+          &:focus
+            color color-lightblue
+            transition .3s color ease
+      &__button
+        display: inline-block
+        width 100%
+        text-align: center
+        background-color color-darkblue
+        color color-white
+        font bold 0.8em oxygenfonts // 16px
+        letter-spacing 0.48px
+        border-radius 2px
+        padding 0.625em // 10px
         transition .3s background-color ease
+        &:hover
+        &:focus
+          background-color color-lightblue
+          transition .3s background-color ease
 
+/************************************\
+  NEWSLETTERS SECTION
+\************************************/
+
+.home
+  .newsletter
+    max-width 29.1em // 582px
+    margin 12em auto 0 auto
+    text-align center
+    &__title
+      font normal 1.5em oxygenfonts // 30px
+      letter-spacing 0.81px
+      line-height 1
+    &__subtitle
+      display block
+      margin-bottom 2.5em
+      font normal 1em oxygenfonts
+      color color-lightgrey
+      letter-spacing 0.3px
+    &__details
+      display flex
+      justify-content space-between
+      &__item
+        & svg
+          margin-bottom 0.650em // 13px
+        & p
+          font 100 0.8em sourcesansprofonts // 16px
+          letter-spacing 0.24px
+
+.newsletter-form
+  margin 3em 0 0 0
+  & label
+    {visuallyhidden}
+  & input
+    width 226px
+    border 2px solid #E8E9ED
+    border-radius 6px
+    padding 10px 0px 10px 10px
+    font-size: 14px
+    &::placeholder
+      color color-lightgrey
+      font-size: 14px
+      padding-top 9px
+  & button
+    position relative
+    top -2px
+    left -10px
+    height 43px
+    width 94px
+    font-size 10px
+    color color-white
+    font-weight bold
+    text-transform uppercase
+    letter-spacing 1px
+    border 0
+    border-radius 0 6px 6px 0
+    background-color color-darkblue
+    outline none
+    transition .3s background-color ease
+    cursor pointer
+    &:active
+    &:focus
+    &:hover
+      transition .3s background-color ease
+      background-color color-lightblue
+
+.newsletter-out
+  position: relative
+  top -6px
+  font-size: 0.5em // 10px
+  color color-lightgrey
+  line-height: 1
 
