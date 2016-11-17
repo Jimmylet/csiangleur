@@ -11,16 +11,16 @@ html(lang='fr')
             div.intro__logo
                 svg(width='139', height='100', xmlns='http://www.w3.org/2000/svg')
                     defs
-                        lineargradient#a(x1='-53.9%', y1='53.8%', x2='64.3%', y2='53.8%')
+                        lineargradient#gradIntro1(x1='-53.9%', y1='53.8%', x2='64.3%', y2='53.8%')
                             stop(stop-color='#2883D2', offset='0%')
                             stop(stop-color='#46B6A6', offset='100%')
-                        lineargradient#b(x1='5.2%', y1='-5.3%', x2='5.2%', y2='112.9%')
+                        lineargradient#gradIntro2(x1='5.2%', y1='-5.3%', x2='5.2%', y2='112.9%')
                             stop(stop-color='#2883D2', offset='0%')
                             stop(stop-color='#46B6A6', offset='100%')
                     g(fill='none', fill-rule='evenodd')
-                        circle(fill-opacity='.3', fill='url(#a)', cx='69', cy='50', r='50')
-                        circle(fill-opacity='.6', fill='url(#b)', cx='69.5', cy='50.5', r='42.5')
-                        circle(fill='url(#b)', cx='70', cy='51', r='35')
+                        circle(fill-opacity='.3', fill='url(#gradIntro1)', cx='69', cy='50', r='50')
+                        circle(fill-opacity='.6', fill='url(#gradIntro2)', cx='69.5', cy='50.5', r='42.5')
+                        circle(fill='url(#gradIntro2)', cx='70', cy='51', r='35')
                         g(transform='translate(0 46)', fill='#FFF')
                             circle(cx='2', cy='17', r='2')
                             circle(cx='137', cy='17', r='2')
@@ -61,7 +61,7 @@ html(lang='fr')
                             | Plusieurs médecins diplômés vous reçoivent en consultation et vous prodigue des soins.
                     section.services__item
                         svg(width='75', height='75', viewbox='0 0 75 75', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', xml:space='preserve', style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;')
-                            circle#a(cx='37.5', cy='37.5', r='37.5', style='fill:#2670b1;')
+                            circle#abcd(cx='37.5', cy='37.5', r='37.5', style='fill:#2670b1;')
                             g
                                 circle#a1(cx='37.5', cy='37.5', r='37.5', style='fill:#2670b1;')
                                 path(d='M37.466,15.02c-2.98,0 -5.376,2.378 -5.376,5.335l0,23.203c0,1.382 0.421,2.7 1.23,3.825l0.875,1.221c0.81,1.125 1.231,2.443 1.231,3.825l0,6.459c0,1.125 0.906,2.057 2.072,2.057c1.134,0 2.073,-0.9 2.073,-2.057l0,-6.459c0,-1.382 0.421,-2.7 1.231,-3.825l0.875,-1.221c0.809,-1.125 1.23,-2.443 1.23,-3.825l0,-23.203c-0.065,-2.925 -2.461,-5.335 -5.441,-5.335Z', style='fill:#f1f3f7;')
@@ -119,22 +119,34 @@ html(lang='fr')
                             li.newsletter__details__item
                                 svg(id="news-maison", width='56', height='56', xmlns='http://www.w3.org/2000/svg')
                                     defs
-                                        lineargradient#a(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
+                                        lineargradient#ab(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
                                             stop(stop-color='#2883D2', offset='0%')
                                             stop(stop-color='#46B6A6', offset='100%')
                                     g(transform='translate(1 1)', stroke-width='2', fill='none', fill-rule='evenodd')
                                         g(stroke='#46B6A6')
                                             path(d='M15.17391304 27v13.6363636c0 .7531149.62290825 1.3636364 1.39130435 1.3636364h6.2608696v-9.5454545h8.347826V42h6.2608696c.7683955 0 1.3913044-.6105215 1.3913044-1.3636364V27M11 27v-1.3636364l15.0870561-12.85828633c.5235078-.44617166 1.3023801-.44617166 1.8258879 0L43 25.6363636V27H11z')
-                                        circle(stroke='url(#a)', cx='27', cy='27', r='27')
+                                        circle(stroke='url(#ab)', cx='27', cy='27', r='27')
+
+
+
+
+
+
+
+
+
+
+
+
                                 p Les infos sur votre maison médicale
                             li.newsletter__details__item
                                 svg(width='56', height='56', xmlns='http://www.w3.org/2000/svg')
                                     defs
-                                        lineargradient#a(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
+                                        lineargradient#abc(x1='5.19858801%', y1='-5.27272727%', x2='149.769284%', y2='84.5814383%')
                                             stop(stop-color='#2883D2', offset='0%')
                                             stop(stop-color='#46B6A6', offset='100%')
                                     g(transform='translate(1 1)', stroke-width='2', fill='none', fill-rule='evenodd')
-                                        circle(stroke='url(#a)', cx='27', cy='27', r='27')
+                                        circle(stroke='url(#abc)', cx='27', cy='27', r='27')
                                         g(transform='translate(15 11)', stroke='#46B6A6')
                                             path(d='M25 12.6511628C25 22.3255814 12.5 32 12.5 32S0 22.372093 0 12.6511628C0 5.66411855 5.59644066 0 12.5 0 19.4035593 0 25 5.66411855 25 12.6511628z')
                                             ellipse(cx='12.5', cy='12.6511628', rx='5.14705882', ry='5.20930233')
