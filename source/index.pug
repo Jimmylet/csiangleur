@@ -91,15 +91,26 @@ html(lang='fr')
                             span.medecine__fiches__title Dernières fiches pratique&nbsp;:
                             ul.medecine__fiches__list
                                 li.medecine__fiches__item
-                                    a.medecine__fiches__link Manger équilibré, c’est important
+                                    a(href="#").medecine__fiches__link Manger équilibré, c’est important
                                 li.medecine__fiches__item
-                                    a.medecine__fiches__link Faites vos vaccins
+                                    a(href="#").medecine__fiches__link Faites vos vaccins
                                 li.medecine__fiches__item
-                                    a.medecine__fiches__link Lorem ipsum dolor sit amet
+                                    a(href="#").medecine__fiches__link Lorem ipsum dolor sit amet
                     div.medecine__horaires
                         span.medecine__horaires__title  Vous désirez nous rendre visite ?
                         ul.medecine__horaires__list
                             li.medecine__horaires__item
+                                span.medecine__horaires__day Lundi - Vendredi
+                                span.medecine__horaires__hour 8:00 - 19:00
+                            li.medecine__horaires__item
+                                span.medecine__horaires__day Samedi
+                                span.medecine__horaires__hour 9:00 - 12:00
+                        p.medecine__horaires__garde
+                            | En dehors de ces heures, vous pouvez bénéficier du
+                            a(href="#" title="Vers la page Service de garde")  service de garde
+                            | .
+                        a.medecine__horaires__button(href="#" title="Vers la page Service et Equipe") Voir les horaires par services
+
 
 
 

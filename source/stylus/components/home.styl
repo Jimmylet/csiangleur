@@ -106,7 +106,7 @@
         background-color color-lightblue
 
 /************************************\
-  ANIMATION HEART
+  ANIMATIONS SERVICES
 \************************************/
 #heartline
   animation 9s linear 2s infinite heartline
@@ -205,3 +205,110 @@
     transform: scaleY(0);
   }
 }
+
+/************************************\
+  FICHES PRATIQUE ET HORAIRES
+\************************************/
+
+.medecine
+  position: relative
+  background-color: color-greybackground
+  padding 5em 1em 2em 1em // 40px 20px
+  margin-top 180px
+  &:before
+    content ""
+    display block
+    background-color color-greybackground
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: skewY(2.5deg);
+    transform-origin: 100% 0;
+    bottom: -26%;
+    z-index -1
+
+  &__wrap
+    max-width 48em // 960px
+    margin 0 auto
+    display flex
+    justify-content space-between
+  &__wrapright
+    max-width 24em // 480px
+  &__title
+    font bold 2em oxygenfonts
+    letter-spacing 1.08px
+    line-height: 1.5
+    margin-bottom 1em
+  &__fiches
+    &__title
+      font normal 1em oxygenfonts
+      letter-spacing 0.54px
+    &__link
+      font normal 0.8em oxygenfonts // 16px
+      transition .3s color ease
+      &:hover
+      &:focus
+        color color-lightblue
+        transition .3s color ease
+    &__link:before
+      content "\e904"
+      margin 0 10px 0 0
+      position: relative
+      top 5px
+      font-family icons
+      display inline-block
+      color color-greenblue
+      font-size: 1.5em
+  &__horaires
+    max-width 16em // 320px
+    background-color color-white
+    border-radius 2px
+    padding 1.5em // 30px
+    &__title
+      display: block
+      font bold 1em oxygenfonts
+      letter-spacing 0.54px
+      line-height 1.5
+      margin-bottom 1.250em // 25px
+    &__item
+      display: flex
+      justify-content space-between
+      margin-bottom 0.650em // 13px
+    &__day
+      font-size 0.800em // 16px
+      letter-spacing 0.43px
+    &__hour
+      color color-darkblue
+      font-family sourcesansprofonts
+      font-weight: 700
+      font-size: 0.8em // 16px
+    &__garde
+      font 100 0.8em sourcesansprofonts
+      margin-bottom 2.500em // 40px
+      & a
+        font-size: 1em
+        color color-darkblue
+        font-weight: bold
+        transition .3s color ease
+        &:hover
+        &:focus
+          color color-lightblue
+          transition .3s color ease
+    &__button
+      display: inline-block
+      width 100%
+      text-align: center
+      background-color color-darkblue
+      color color-white
+      font bold 0.8em oxygenfonts // 16px
+      letter-spacing 0.48px
+      border-radius 2px
+      padding 0.625em // 10px
+      transition .3s background-color ease
+      &:hover
+      &:focus
+        background-color color-lightblue
+        transition .3s background-color ease
+
+
