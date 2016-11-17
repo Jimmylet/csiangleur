@@ -1,1 +1,40 @@
 footer.footer
+    div.footer__wrap
+        div.col.col1
+            span.col__title
+                abbr(title="Centre de Santé Intégré") C.S.I.
+                |  d’Angleur
+            span.col__text 48, Rue Vaudrée
+            span.col__text 4031 Angleur
+            span.col__text TEL&nbsp;: 085/21.11.13
+            a(href="#" title="Vers…").col1__button Nous contacter
+        div.col.col2
+            span.col__title Nos horaires
+            div.col2__horaires
+                span.col__text.col__text--week Lundi - Vendredi
+                span.col__text.col__text--hour 9:00 - 19:00
+            div.col2__horaires.col2__horaires--2
+                span.col__text Samedi
+                span.col__text.col__text--hour 9:00 - 12:00
+            span.col__text.col__text--nohour En dehors de ces heures ?
+            span.col__text
+                | Voir le
+                a(href="#" title="Vers…").col__text--nohourlink  service de garde
+                | .
+        div.col.col3
+            span.col__title Restez informé sur nos activités
+            form.newsletter-form
+                label(for="newsletter") Ecrivez votre adresse email :
+                input(type="email" name="newsletter" id="newsletter" placeholder="Votre adresse email ici" required).newsletter-form__input
+                button(type="submit") S’inscrire
+            div.col3__wrap-links
+                a(href="#" title="Vers").col3__fb
+                    span Notre facebook
+                div.col3__sublinks
+                    a(href="#" title="Vers") Consultez nos liens utile
+                    a(href="#" title="Vers") Lisez nos fiches pratique
+    span.copyright
+        | ©
+        abbr(title="Centre de Santé intégré")  C.S.I.
+        |  Angleur - Tous droits réservés. Design by
+        a(href="http://letecheur.me")  Jimmy Letecheur

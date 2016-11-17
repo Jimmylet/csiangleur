@@ -1,0 +1,115 @@
+.footer
+  padding 2.5em 1em .5em 1em// 50px 20px
+  background-color color-darkblue
+  & *
+    color color-white
+  &__wrap
+    max-width 48em
+    margin: 0 auto
+    display flex
+    justify-content space-between
+  & .col
+    &__title
+      display: block
+      font bold 1em oxygenfonts
+      letter-spacing 0.5px
+      margin-bottom 0.5em // 10px
+    &__text
+      display: block
+      font-size: 0.9em // 18px
+      letter-spacing 0.3px
+      margin-bottom 5px
+      &--nohour
+        margin-bottom 0
+      &--nohourlink
+        font-weight: 700
+        font-size: 1em
+      &--week
+        margin-right 1em
+      &--hour
+        font-weight: 700
+  & .col1__button
+    display: inline-block
+    margin-top 0.722em // 13px
+    background-color color-white
+    color color-darkblue
+    font normal 0.9em oxygenfonts
+    padding 0.278em 1.333em // 5px 24px
+    border-radius 2px
+    letter-spacing 0.43px
+    transition .3s all ease
+    transition-property background-color, color
+    &:hover
+    &:focus
+      transition .3s all ease
+      transition-property background-color, color
+      background-color #F6F6F6
+      color color-black
+  & .col2__horaires
+    display flex
+    justify-content space-between
+    &--2
+      margin-bottom: 1.1em
+  & .col3
+    .newsletter-form
+      margin-top 0
+      margin-bottom 1.5em // 30px
+      & input
+        border 2px solid color-white
+        background-color color-darkblue
+        color color-white
+        &::placeholder
+          color color-white
+      & button
+        background-color color-white
+        color color-darkblue
+        transition .3s all ease
+        transition-property background-color, color
+        &:hover
+        &:focus
+        &:active
+          background-color #F6F6F6
+          color color-black
+          transition .3s all ease
+          transition-property background-color, color
+    .col3__wrap-links
+      display flex
+      justify-content space-between
+      max-width 270px
+    .col3__fb
+      position: relative
+      top -3px
+      display: block
+      margin-right: 1em
+      &:before
+        content "\e903"
+        display: block
+        font-family icons
+        font-size: 2.25em
+        color color-white
+        transition .3s color ease
+      &:hover:before
+      &:focus:before
+        color #F6F6F6
+        transition .3s color ease
+      & span
+        {visuallyhidden}
+    .col3__sublinks
+      & a
+        display: block
+        transition .3s color ease
+        &:hover
+        &:focus
+          text-decoration underline
+
+  .copyright
+    display: block
+    margin-top 5em
+    text-align: center
+    font-size: 0.5em
+    & a,
+    & abbr
+      font-size: 1em
+    & a:hover
+    & a:focus
+      text-decoration: underline
