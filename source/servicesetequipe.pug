@@ -1,0 +1,60 @@
+doctype html
+html(lang='fr')
+    head
+        title Services et équipe - Centre de Santé intégré d’Angleur
+        include template/_meta.pug
+    body.no-js.servicesequipe
+        h1.servicesequipe__title Services et équipe
+        header.header
+            include template/_menu
+        div.bandeau
+            span.bandeau__title Services et équipe
+            ol.breadcrumb(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='index.html', title='Aller vers l’accueil') Accueil &nbsp;/&nbsp;
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='#') Service et équipe
+        main
+            div.content-top
+                div.titlehead
+                    span.titlehead__subtitle Centre de santé intégré
+                    span.titlehead__title Une multitude de discipline
+                section.content
+                    div.content__wrap
+                        div.content__info
+                            div.content__info-title
+                                img(src="../images/svg/services_medecine.svg" alt="" width="57" height="51")
+                                h2 Médecine générale
+                            div.content__info-horaire
+                                span.content__info-horaire__title Horaire du service&nbsp;:
+                                table.content__info-horaire__wrap
+                                    tbody
+                                        tr
+                                            td Lundi - Vendredi
+                                            td 9:00 - 19:00
+                                        tr
+                                            td Samedi
+                                            td 9:00 - 12:00
+                        div.content__description
+                            p
+                                | Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+                            p
+                                | Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le
+                        div.equipe
+                            figure
+                                img(src="http://lorempixel.com/192/124/people/1" alt="Photo de" width="192" height="124")
+                                figcaption
+                                    span.equipe__name Docteur Lorem
+                                    span.equipe__role Médecin généraliste
+                                    div.equipe__dispo
+                                        span.equipe__dispo__clic Voir les disponibilités
+                                        div.equipe__dispo__horaire
+                                            table
+                                                tbody
+                                                    tr
+                                                        td Lundi et Mardi
+                                                        td 9:00 - 19:00
+                                                    tr
+                                                        td Mercredi à Vendredi
+                                                        td 11:00 - 19:00
+
