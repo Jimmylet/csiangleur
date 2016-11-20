@@ -18,9 +18,10 @@
       font bold 1.5em oxygenfonts // 30px
       letter-spacing 1px
       line-height 1.2
-      margin-bottom 4.5em // 90px
+      margin-bottom 3.5em //
+  .content-top
+    padding 0 1em 2em 1em
   .content
-    padding 0 1em
     &__wrap
       {wrapSection}
     &__info
@@ -44,7 +45,132 @@
           & td:last-child
             color color-darkblue
     &__description
-      margin 1.5em 0 2em 0 // 30px 40px
+      margin 1.5em 0 3em 0 // 30px 50px
       & p
         {paragraphSection}
 
+.servicesequipe .content-2nd
+  padding 5em 1em
+  background-image linear-gradient(-180deg, #FFFFFF 23%, #F6F6F6 50%);
+
+/************************************\
+  EQUIPE
+\************************************/
+
+.servicesequipe
+  & figure
+    max-width 12.55em
+    & img
+      display: block
+      border-radius 2px 2px 0 0
+  & figcaption
+    padding 15px 10px
+    text-align center
+    background-color color-white
+    border-radius 0 0 2px 2px
+    .equipe
+      &__name
+        display: block
+        font bold 0.8em oxygenfonts // 16px
+        letter-spacing 0.36px
+      &__role
+        display: block
+        font-size 0.600em // 12px
+        color color-darkblue
+        letter-spacing 0.27px
+      &__dispo
+        margin-top 17px
+        &__clic
+          display: block
+          font-size: 0.600em // 12px
+          cursor pointer
+          margin-bottom 1em
+          &:after
+            display: inline-block
+            margin-left: 6px
+            font-size: 0.8em
+            position: relative
+            top 1px
+            content: '\e905'
+            font-family 'icons'
+            transform rotate(-90deg) translateX(1px)
+        & table
+          margin: 0 auto
+          text-align left
+          & td
+            font-size 0.6em // 12px
+            color color-lightgrey
+            padding-right 10px
+          & td:last-child
+            padding-right 0
+          & td:last-child
+            color color-darkblue
+          & tr
+            border-bottom 4px  solid transparent
+
+
+// horaire folded
+
+.js-active
+  .equipe
+    &__dispo__horaire
+      max-height 0px
+      overflow hidden
+      transition 1.5s max-height ease
+
+  .equipe .horaire-folded ~ .equipe__dispo__horaire
+    max-height 400px
+    transition 2s max-height ease
+  .equipe .horaire-folded:after
+    transform rotate(0deg) translateX(0px)
+
+
+.no-js
+  .equipe
+    &__dispo__horaire
+      max-height 400px
+      overflow visible
+      transition none
+  .equipe .horaire-folded ~ .equipe__dispo__horaire
+    transition none
+
+
+.servicesequipe .equipe
+  display flex
+  flex-wrap wrap
+.servicesequipe .equipe figure
+  margin-right: 5%;
+  margin-bottom: 2.5em;
+.servicesequipe .equipe figure:last-child
+  margin-right: 0
+.servicesequipe .equipe figure:nth-child(3n + 3)
+  margin-right: 0
+
+
+
+@media screen and ( max-width: 855px )
+  .servicesequipe .equipe figure
+    margin-right 10px
+  .servicesequipe .equipe figure:nth-child(3n + 3)
+    margin-right 0
+
+@media screen and ( max-width: 795px )
+  .servicesequipe .equipe
+    justify-content space-around
+
+@media screen and ( max-width: 560px )
+  .servicesequipe .equipe figure
+    max-width none
+    width 100%
+  .servicesequipe .equipe figure img
+    width 100%
+  .servicesequipe
+    & figcaption
+     & .equipe__name
+       font-size: 20px
+     & .equipe__role
+       font-size: 16px
+     & .equipe__dispo__clic
+         font-size: 16px
+  .servicesequipe figcaption .equipe__dispo table td
+    font-size: 16px;
