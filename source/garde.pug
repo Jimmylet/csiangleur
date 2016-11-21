@@ -1,0 +1,56 @@
+doctype html
+html(lang='fr')
+    head
+        title Service de garde - Centre de Santé intégré d’Angleur
+        include template/_meta.pug
+    body.no-js.garde
+        h1.garde__title Service de garde
+        header.header
+            include template/_menu
+        div.bandeau
+            span.bandeau__title Service de garde
+            ol.breadcrumb(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='index.html', title='Aller vers l’accueil') Accueil &nbsp;/&nbsp;
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='#') Service de garde
+        main
+            section.content
+                div.content__wrap
+                    h2.content__title Un médecin de garde est toujours disponible en dehors des heures d’ouverture.
+                    span.content__subtitle A ne contacter qu’en cas d’urgence.
+                    div.content__tel-wrap
+                        a.content__tel(href="tel:1733") 1733
+                    div.intro
+                        div.intro-wrap-text
+                            p.intro__text Le service de garde est un service proposé par votre commune. En dehors des heures d’ouverture du Centre de Santé Intégré d’Angleur, vous pouvez faire appel aux médecins en place.
+                            p.intro__text Le soir après 19h00, le week-end et le jours fériés, le service de garde est ouvert.
+                        div.intro__horaires
+                            div.intro__horaires__wrap
+                                span.intro__horaires__title Ne contacter le service de garde qu’en dehors de ces heures de service&nbsp;:
+                                table.intro__horaires__table
+                                    tbody
+                                        tr
+                                            td Lundi - Vendredi
+                                            td 8:00 - 19:00
+                                        tr
+                                            td Samedi
+                                            td 9:00 - 12:00
+                    div.content__faq
+                        span.content__faq__question Puis-je contacter le service de garde pour n’importe quoi&nbsp;?
+                        p.content__faq__paragraph Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                    div.content__faq
+                        span.content__faq__question Combien ça coûte&nbsp;?
+                        p.content__faq__paragraph Si le médecin de garde est éxterieur à la maison médicale, vous devrez le payer. Le Centre de Santé intégré d’Angleur vous remboursera ensuite le montant que vous avez avancé au tarif de la mutualité.
+                        p.content__faq__paragraph Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie.
+                    div.content__faq
+                        span.content__faq__question Comment contacter le service de garde&nbsp;?
+                        p.content__faq__paragraph
+                            | Pour contacter le service de garde, il faut composer le numéro unique
+                            strong  1733
+                            | .
+                        p.content__faq__paragraph Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie.
+
+
+        include template/_footer
+        include template/_scripts

@@ -1,0 +1,95 @@
+.garde
+  &__title
+    {visuallyhidden}
+  & .bandeau
+    background-image url("../images/bandeau_garde.jpg")
+  & .content
+    padding 5em 1em 7.5em 1em // 100px 20px 150px
+    background-image: linear-gradient(-180deg, #FFFFFF 4%, #F6F6F6 66%);
+    &__wrap
+      margin: 0 auto
+      max-width 44.35em
+    &__title
+      max-width 44.35em
+      font normal 1.5em oxygenfonts
+      letter-spacing 1px
+      text-align: center
+      line-height: 1.6
+    &__subtitle
+      display: block
+      margin-top 1em
+      text-align: center
+      font-weight bold
+      letter-spacing 0.6px
+    &__tel-wrap
+      margin-top 1.5em
+      text-align: center
+    &__tel
+      display: inline-block
+      text-align: center
+      padding .5em 1em
+      background-color color-lightblue
+      color color-white
+      font-weight 700
+      border-radius 2px
+      transition .3s background-color ease
+      &:before
+        content "\e901"
+        font-family icons
+        margin-right .5em
+        font-size .75em
+        color color-white
+      &:hover
+      &:focus
+        transition .3s background-color ease
+        background-color color-darkblue
+  & .intro
+    margin 5em 0 3.5em 0 // 100px 75px
+    display flex
+    justify-content space-between
+    align-items flex-start
+    &-wrap-text
+      width 56%
+    & p
+      line-height 1.6em
+      margin-bottom 1em // 20px
+    &__horaires
+      max-width 16em
+      padding 1.5em 1em // 30px 20px
+      background-color color-white
+      border-radius 2px
+      &__wrap
+        margin 0 auto
+      &__title
+        display: block
+        margin-bottom 1.25em // 25px
+        font bold 1em oxygenfonts
+        letter-spacing 0.5px
+        line-height: 1.6em
+      &__table
+        & td
+          font-size: 0.8em // 16px
+          border-bottom 8px solid transparent
+        & td:first-child
+          padding-right 1.5em
+        & td:last-child
+          font-weight: 700
+          color color-darkblue
+  & .content__faq
+    margin-bottom 3.75em // 75px
+    & p
+      margin-bottom 1em
+      line-height: 1.6em
+    & strong
+      color color-darkblue
+      font-weight: bold
+    &__question
+      display: block
+      margin-bottom 1.25em // 25px
+      font normal 1.3em oxygenfonts // 26px
+      letter-spacing 0.5px
+      line-height: 1.3
+
+
+
+
