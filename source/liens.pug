@@ -1,0 +1,33 @@
+doctype html
+html(lang='fr')
+    head
+        title Liens utile - Centre de Santé intégré d’Angleur
+        include template/_meta.pug
+    body.no-js.liens
+        h1.garde__title Liens utile
+        header.header
+            include template/_menu
+        div.bandeau
+            span.bandeau__title Liens utile
+            ol.breadcrumb(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='index.html', title='Aller vers l’accueil') Accueil &nbsp;/&nbsp;
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='#') Liens utile
+        main
+            section.content
+                div.content__wrap
+                    h2.content__title Consultez cette liste de liens utile pour obtenir plus d’informations.
+                    ul.content__links
+                        li.content__link
+                            a(href="#") Service de santé de Wallonie
+                            p On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même.
+                        li.content__link
+                            a(href="#") Association des maisons médicale de Belgique
+                            p On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même.  L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.
+                        li.content__link
+                            a(href="#") Centre hospitalier d’Angleur
+                            p On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même.  L'avantage du Lorem Ipsum.
+                        li.content__link
+                            a(href="#") Lorem ipsum dolor sit amet
+                            p On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même.  L'avantage du Lorem Ipsum.

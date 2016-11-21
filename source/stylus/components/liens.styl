@@ -1,0 +1,45 @@
+.liens
+  &__title
+    {visuallyhidden}
+  & .bandeau
+    background-image url("../images/bandeau_liens.jpg")
+  & .content
+    padding 5em 1em 7.5em 1em // 100px 20px 150px
+    background-image: linear-gradient(-180deg, #FFFFFF 4%, #F6F6F6 66%);
+    &__wrap
+      margin: 0 auto
+      max-width 44.35em
+    &__title
+      max-width 44.35em
+      margin-bottom 3.333em // 100px
+      font normal 1.5em oxygenfonts
+      letter-spacing 1px
+      text-align: center
+      line-height: 1.6
+    &__link
+      margin-bottom 2em // 40px
+    &__link a
+      display: inline-block
+      margin-bottom 0.750em
+      font-weight bold
+      color color-darkblue
+      transition .3s color ease
+      &:hover
+      &:focus
+        transition .3s color ease
+        color color-lightblue
+      &:before
+        position: relative
+        top 5px
+        content "\e904"
+        display: inline-block
+        font-size: 1.3em;
+        line-height: 0
+        margin-right 20px
+        font-family icons
+        color color-greenblue
+    &__link p
+      margin-left 2.3em
+      line-height: 1.6em
+
+
