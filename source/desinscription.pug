@@ -1,0 +1,37 @@
+doctype html
+html(lang='fr')
+    head
+        title Désinscription - Centre de Santé intégré d’Angleur
+        include template/_meta.pug
+    body.no-js.fonctionnement-inscription.fonctionnement-desinscription
+        h1.fonctionnement-inscription__title Désinscription
+        header.header
+            include template/_menu
+        div.bandeau
+            span.bandeau__title Désinscription
+            ol.breadcrumb(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='index.html', title='Aller vers l’accueil') Accueil &nbsp;/&nbsp;
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='#') Désinscription
+        main
+            section.desinscription
+                div.desinscription__wrap
+                    h2.inscription__title Vous désirez vous désinscrire du Centre de Santé intégré d’Angleur ?
+                    span.inscription__subtitle C’est facile.
+                    div.desinscription__intro
+                        p
+                            | Il est possible de vous désinscrire à tout moment du Centre de Santé intégré d’Angleur. Plusieurs raisons peuvent vous amener à vous désinscrire, comme un déménagement,  au cas ou vous n'êtes pas satisfait des services, si vous partez en convalescence en famille, dans une maison de repos ou de revalidation.
+                        p
+                            | Il est important de nous expliquer le motif de votre désinscription afin que nous puissions nous améliorer quand c’est possible.
+                    div.desinscription__faq
+                        div.description__faq-wrap
+                            span.desinscription__faq__title Attention&nbsp;: La désinscription prend deux mois.
+                            p Pendant ce temps, vous pouvez toujours venir vous faire soigner au Centre de Santé intégré d’Angleur.
+                        div.description__faq-wrap
+                            span.desinscription__faq__title Comment faire pour me désinscrire ?
+                            p Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            p un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+
+        include template/_footer
+        include template/_scripts
