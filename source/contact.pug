@@ -1,0 +1,65 @@
+doctype html
+html(lang='fr')
+    head
+        title Contactez-nous - Centre de Santé intégré d’Angleur
+        include template/_meta.pug
+    body.no-js.contact
+        h1.garde__title Contactez-nous
+        header.header
+            include template/_menu
+        div.bandeau
+            span.bandeau__title Contactez-nous
+            ol.breadcrumb(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='index.html', title='Aller vers l’accueil') Accueil &nbsp;/&nbsp;
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='#') Contactez-nous
+        main
+            section.content
+                div.content__wrap
+                    section.content__infos
+                        h2.content__infos__title-hide Informations de contact
+                        img.content__infos__logo(src="./images/svg/logomenu.svg" width="107" height="107" alt="Logo du Centre de Santé intégré d’Angleur")
+                        span.content__infos__title Centre de Santé intégré d’Angleur
+                        span.content__infos__address Rue Vaudrée, 8 - 4031 &nbsp;Angleur
+                        span.content__infos__tel TEL&nbsp;: 085/86.82.49
+                        span.content__infos__fax FAX&nbsp;: 085/86.82.50
+                    a.content__map(href="#" title="Vers google map")
+                        span Vers Google Maps
+                        img.content__map__img(src="./images/maps.jpg" alt="" width="960" height="482")
+                    div.content__bottom
+                        section.content__form
+                            h2.content__form__title Une question&nbsp;? Un rendez-vous&nbsp;? Contactez-nous&nbsp;!
+                            form.floatingLabels(action="post" method="index.php")
+                                div.names
+                                    div.names__name
+                                        label.names__name__label.fLabel(for="firstname") Votre prénom *
+                                        input.names__name__input(type="text" id="firstname" required)
+                                    div.names__name
+                                        label.names__name__label.fLabel(for="name") Votre nom *
+                                        input.names__name__input(type="text" id="name" required)
+                                div.email
+                                    label.email__label.fLabel(for="email") Votre adresse email *
+                                    input.email__input(type="text" id="email" required)
+                                div.message
+                                    label.message__label.fLabel(for="message") Votre message *
+                                    textarea.message__textarea(id="message")
+                                input.send(type="submit" value="Envoyer le message")
+                                span.requiredFields Les champs marqués d’une étoile (*) sont obligatoire.
+                        section.content__horaires
+                            h2.content__horaires__title Voici nos horaires généraux&nbsp;:
+                            table
+                                tr
+                                    td Lundi - Vendredi
+                                    td 8:00 - 19:00
+                                tr
+                                    td Samedi
+                                    td 9:00 - 12:00
+                            span.content__horaires__text
+                                | En dehors de ces heures, vous pouvez bénéficier du
+                                a(href="#" title="Vers")  service de garde
+                                | .
+                            a.content__horaires__button(href="#" title="Vers") Voir les horaires par services et par thérapeute.
+
+        include template/_footer
+        include template/_scripts
