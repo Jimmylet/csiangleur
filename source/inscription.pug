@@ -22,26 +22,38 @@ html(lang='fr')
                     ol.inscription__list
                         li.inscription__item
                             span.inscription__item__title
-                                | Vérifiez que vous habitez dans la zone couverte par votre maison de santé.
+                                | Vérifiez que vous répondez aux conditions.
                             p.inscription__item__paragraph
-                                | Pour profiter des services offert par la maison musicale, l’inscription est une étape obligatoire. Pour profiter des services du Centre de Santé intégré d’Angleur, vous devez faire partie de la zone couverte.
-                            p.inscription__item__paragraph
+                                | Pour profiter des services offert par la maison médicale, l’inscription est une étape obligatoire. Pour profiter des services du Centre de Santé intégré d’Angleur, vous devez faire partie de la zone couverte, à savoir
+                                strong  la ville d’Angleur.
+                            //p.inscription__item__paragraph
                                 | Si vous habitez dans l’une des villes suivante, vous êtes en droit de vous inscrire.
-                            ul.inscription__city
+                            //ul.inscription__city
                                 li.inscription__city__item Angleur
                                 li.inscription__city__item Kinkempois
                                 li.inscription__city__item Sart Tilman
                                 li.inscription__city__item Angleur
                                 li.inscription__city__item Lorem ipsum
+                            p.inscription__item__paragraph
+                                | De plus, vous devez être
+                                strong  en ordre de mutuelle
+                                |  (cotisations à l’assurance obligatoire - AO)
+                            p.inscription__item__paragraph
+                                | N’hésitez pas à prendre
+                                a(href="contact.html")  contact
+                                |  avec la maison médicale CSI Angleur qui vous donnera toutes les explications nécessaires.
                         li.inscription__item
                             span.inscription__item__title
                                 | Venez vous présenter à l’accueil du Centre de Santé intégré d’Angleur
                             p.inscription__item__paragraph
-                                | Si vous habitez dans l’une des zones citées précédemment, vous pouvez venir vous présenter à l’accueil avec
+                                | Si vous répondez aux conditions énoncées ci-dessus, vous devrez vous présenter à la maison médicale afin que le formulaire d’inscription puisse être dûment complété. Il vous sera demandé de vous munir de votre
+                                strong  carte d’identité
+                                |  et de
                                 strong  cinq vignettes
                                 |  récentes de votre mutualité afin d’obtenir un rendez-vous administratif.
                             p.inscription__item__paragraph
-                                | Pour rappel, l’adresse est la suivante : 48, rue Vaudrée, 4031 - Angleur.
+                                | Pour rappel, l’adresse est la suivante :
+                                strong  48, rue Vaudrée, 4031 - Angleur.
                         li.inscription__item
                             span.inscription__item__title
                                 | Présentez-vous à votre rendez-vous.
@@ -51,7 +63,37 @@ html(lang='fr')
                             span.inscription__item__title
                                 | Signez votre contrat.
                             p.inscription__item__paragraph
-                                | Si vous êtes en accord avec notre projet et que vous désirez profiter des services de la maison médicale d’Angleur, vous serez amené à signer un contrat pour compléter votre inscription. Celle-ci ne sera effective qu’au premier jour du mois suivant.
+                                | Si vous êtes en accord avec notre projet et que vous désirez profiter des services de la maison médicale d’Angleur, vous serez amené à signer un contrat pour compléter votre inscription.
+                            p.inscription__item__paragraph
+                                | Veuillez noter que l’inscription ne sera effective qu’à partir du 1er jour du mois suivant votre inscription, c’est à partir de cette date que votre mutuelle nous versera le forfait mensuel. Du jour de signature du formulaire d’inscription jusqu’au 1er jour du mois suivant, vous pourrez déjà être soigné à la maison médicale mais il vous faudra payer ses soins et vous faire rembourser auprès de votre mutuelle.
+
+            section.questions
+                div.questions__wrap
+                    h2.questions__title Quelques informations supplémentaire
+
+                    span.questions__subtitle Si je m’inscris, quels sont mes engagements ?
+                    p.questions__paragraph Tout patient qui s’inscrit dans une maison médicale s’engage :
+                    ul.questions__list
+                        li.questions__list__item
+                            p Á être en ordre de cotisations mutuelles à l’assurance obligatoire
+                        li.questions__list__item
+                            p Á ne pas consulter un médecin généraliste et/ou un infirmier extérieur à la maison médicale, sauf en cas d’urgence
+                        li.questions__list__item
+                            p Á communiquer à la maison médicale tout changement d’adresse, de mutuelle,…
+
+                    p Il est important de bien respecter ces engagements afin de permettre le bon fonctionnement de la maison médicale et ainsi l’accès aux soins pour tous les patients inscrits. La solidarité est une notion importante pour nous! C’est grâce aux cotisations mutuelles de nos patients que nous percevons le forfait mensuel, c’est grâce à ce forfait mensuel que les soins peuvent être dispensés à tous nos patients.
+
+
+
+                    span.questions__subtitle Quels sont les engagements de la maison médicale ?
+                    p.questions__paragraph La maison médicale s’engage à fournir à ses patients :
+                    ul.questions__list
+                        li.questions__list__item
+                            p Des soins de qualité accessibles à tous nos patients quelle que soit leur culture, tenant compte de tous les aspects médico-psycho-sociaux et environnementaux, dans une logique de suivi à long terme par l’ensemble des prestataires de soins de la maison médicale grâce un dossier médical global pluridisciplinaire et commun.
+                        li.questions__list__item
+                            p Un accueil de qualité où toute demande, plainte,… exprimée par un patient sera écoutée avec la même attention, sans a priori et sans jugement dans le but de trouver une réponse et/ou une solution à la problématique.
+
+
 
         include template/_footer
         include template/_scripts

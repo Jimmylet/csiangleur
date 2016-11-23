@@ -20,6 +20,19 @@
       letter-spacing 0.1px
       line-height: 1.6
       margin-bottom 1.111em // 20px
+      & a
+        font-weight:bold;
+        color color-darkblue
+        font-size: 1em
+        transition .3s color ease
+        &:hover
+        &:focus
+          color color-lightblue
+          transition .3s color ease
+      & strong
+        font-size: 1em
+        font-weight: bold
+        text-decoration: underline
     &__subtitle
       display: block
       font bold 1.300em oxygenfonts // 26px
@@ -56,5 +69,3 @@
         &:focus
           color color-lightblue
           transition .3s color ease
-    & img
-      margin-top 2em
