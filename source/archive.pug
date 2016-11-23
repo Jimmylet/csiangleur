@@ -1,0 +1,48 @@
+doctype html
+html(lang='fr')
+    head
+        title Fiches pratique - Centre de Santé intégré d’Angleur
+        include template/_meta.pug
+    body.no-js.archives
+        h1.fonctionnement-inscription__title Fiches pratique
+        header.header
+            include template/_menu
+        div.bandeau
+            span.bandeau__title Fiches pratique
+            ol.breadcrumb(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='index.html', title='Aller vers l’accueil') Accueil &nbsp;/&nbsp;
+                li.breadcrumb__link(itemprop='title')
+                    a.breadcrumb__link__text(itemprop='link', href='#') Fiches pratique
+        main
+            section.archive
+                div.archive__wrap
+                    h2.archive__title Nos dernières fiches pratique
+                    a(href="#").article-highlight__wrap
+                        article.article-highlight
+                            img.article-highlight__img(src="./images/article_highlight.jpg" width="960" height="400" alt="")
+                            span.article-highlight__cover-image
+                            h3.article-highlight__title L’hypertension artérielle
+                            span.article-highlight__link Voir la fiche
+                    div.article__wrap
+                        a.article__link(href="#" title="Aller vers")
+                            article.article
+                                div.article__img(style="background-image: url(./images/article_archive.jpg);")
+                                div.article__content
+                                    h3.article__title Le diabète
+                                    span.article__button Voir la fiche
+                        a.article__link(href="#" title="Aller vers")
+                            article.article
+                                div.article__img(style="background-image: url(./images/article_archive.jpg);")
+                                div.article__content
+                                    h3.article__title Le diabète
+                                    span.article__button Voir la fiche
+                        a.article__link(href="#" title="Aller vers")
+                            article.article
+                                div.article__img(style="background-image: url(./images/article_archive.jpg);")
+                                div.article__content
+                                    h3.article__title Le diabète
+                                    span.article__button Voir la fiche
+
+        include template/_footer
+        include template/_scripts

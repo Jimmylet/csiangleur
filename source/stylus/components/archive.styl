@@ -1,0 +1,142 @@
+.archives
+  &__title
+    {visuallyhidden}
+  & .bandeau
+    background-image url("../images/bandeau_archive.jpg")
+  & .archive
+    padding 5em 1em 7.5em 1em // 100px 20px 150px
+    background-image: linear-gradient(-180deg, #FFFFFF 4%, #F6F6F6 66%);
+    &__wrap
+      margin: 0 auto
+      max-width 48em
+    &__title
+      {visuallyhidden}
+  .article-highlight
+    position: relative
+    &__wrap
+      display: block
+      margin-bottom 2.5em // 50px
+    &__cover-image
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      display: block
+      background rgba(1,1,1,0.5)
+      border-radius 2px
+    &__img
+      display: block
+      border-radius 2px
+    &__title
+      position: absolute
+      top 20%
+      margin-left: auto
+      margin-right: auto
+      left: 0
+      right: 0
+      display block
+      padding 1em 0.5em
+      text-align: center
+      font bold 2em oxygenfonts
+      letter-spacing 1.33px
+      color color-white
+    &__link
+      position: absolute
+      margin-left: auto
+      margin-right: auto
+      width 145px
+      left: 0
+      right: 0
+      top 60%
+      text-align: center
+      color color-white
+      letter-spacing 0.2px
+      border 1px solid color-white
+      padding .5em 1em
+      border-radius 2px
+      transition .3s background-color ease
+  .article-highlight:hover .article-highlight__link
+    color color-black
+    background-color color-white
+    transition .3s background-color ease
+
+  .article
+    height 337px
+    max-width 455px
+    position: relative
+    margin-bottom: 2.5em // 50px
+    /*background-color color-white*/
+    &__wrap
+      display: flex
+      justify-content space-between
+      flex-wrap wrap
+    &__link
+      display: inline-block
+      max-width 455px
+      width 100%
+    &__img
+      display block
+      height 240px
+      background-repeat no-repeat
+      background-size cover
+      background-position center center
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+    &__content
+      position: absolute
+      bottom: 0
+      right: 0
+      left: 0
+      background-color color-white
+      text-align: center
+      padding 30px 15px
+      border-radius 2px
+      overflow hidden
+      min-height 97px
+      transition all .3s ease
+      transition-property min-height, padding
+    &__title
+      text-align: center
+      font bold 26px oxygenfonts
+      letter-spacing 0.65px
+      padding 1px 0
+    &__button
+      position: absolute
+      top: 25%
+      right: 36%
+      opacity: 0
+      display: inline-block
+      color color-white
+      background-color color-darkblue
+      letter-spacing 0.2px
+      padding 12px 17px
+      border-radius 2px
+      line-height: 1
+      transform translateY(45px)
+      transition all .3s ease
+      transition-property top, opacity
+      &:hover
+      &:focus
+        background-color color-lightblue
+        transition .3s background-color ease
+
+  .article:hover .article__content
+    min-height 213px
+    transition all .3s ease
+    padding 60px 15px 30px 15px
+    transition-property min-height, padding
+
+  .article:hover .article__button
+    top 35%
+    opacity: 1
+    transition all .3s ease
+    transition-property top, opacity
+
+
+
+
+
+
