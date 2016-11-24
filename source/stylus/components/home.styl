@@ -121,10 +121,13 @@ ANIMATION HEADER
         line-height: 1.6
     &__item:nth-child(1)
       background url("../images/home_psycho.jpg") no-repeat center center
+      background-size cover
     &__item:nth-child(2)
       background url("../images/home_medecine.jpg") no-repeat center center
+      background-size cover
     &__item:nth-child(3)
       background url("../images/home_infirmier.jpg") no-repeat center center
+      background-size cover
     &__button
       display: inline-block
       font bold 0.900em oxygenfonts // 18px
@@ -443,3 +446,65 @@ ANIMATION HEADER
     opacity 1
     transition 1s 1s all ease
     transition-property transform, opacity
+
+@media screen and (max-width: 1005px)
+  .home
+    .intro
+      padding 0 1em
+    .services
+      &__wrap
+        flex-direction: column
+      &__item
+        max-width none
+        width 90%
+        margin 0 auto 1em auto
+
+@media screen and (max-width: 893px)
+  .home
+    .medecine
+      &:before
+        bottom -12%
+      &__wrap
+        flex-direction column
+      &__wrapright
+        margin: 0 auto 2.5em auto
+        max-width 90%
+      &__horaires
+        margin: 0 auto
+        max-width none
+        width 90%
+
+@media screen and (max-width: 631px)
+  .home
+    .newsletter
+      padding 0 1em
+      &__title
+        line-height 1.4
+      &__subtitle
+        margin-top 0.75em
+        line-height: 1.4
+      &__details
+        flex-direction column
+        &__item
+          margin-bottom 2em
+
+
+@media screen and (max-width: 512px)
+  .home
+    .intro
+      &__title
+        font-size 1.5em // 30px
+      &__logo
+        padding-top 2.5em
+
+@media screen and (max-width: 422px)
+  .home
+    .intro
+      padding 0 1em
+    .services
+      &__button
+        width 90%
+        padding 20px 10px
+    .newsletter-form
+      & input
+        width 60%
