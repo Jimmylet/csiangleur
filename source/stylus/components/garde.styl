@@ -58,6 +58,7 @@
       padding 1.5em 1em // 30px 20px
       background-color color-white
       border-radius 2px
+      margin-left 1em
       &__wrap
         margin 0 auto
       &__title
@@ -88,8 +89,24 @@
       margin-bottom 1.25em // 25px
       font normal 1.3em oxygenfonts // 26px
       letter-spacing 0.5px
-      line-height: 1.3
+      line-height: 1.5
 
 
 
 
+@media screen and (max-width: 893px)
+  .garde
+    .intro
+      flex-direction column
+      &__horaires
+        margin: 0 auto
+        max-width none
+        width 80%
+      .intro-wrap-text
+        width 100%
+
+@media screen and (max-width: 631px)
+  .garde
+    .intro
+      &__horaires
+        width 100%
