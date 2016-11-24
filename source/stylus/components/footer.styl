@@ -113,3 +113,37 @@
     & a:hover
     & a:focus
       text-decoration: underline
+
+
+/************************************\
+  MEDIA
+\************************************/
+
+@media screen and (max-width: 893px)
+  .footer
+    &__wrap
+      display: block
+      margin 0 auto
+      text-align: center
+      & .col1,
+      & .col2
+        display inline-block
+        text-align: left
+      & .col1
+        margin-right 100px
+      & .col3
+        display block
+        margin-top 2.5em
+        &__wrap-links
+          margin: 0 auto
+
+@media screen and (max-width: 571px)
+  .footer
+    &__wrap
+      & .col1
+        display: block
+        margin-right: 0
+        text-align: center
+        margin-bottom 2.5em // 50px
+      & .col2
+        text-align: center
