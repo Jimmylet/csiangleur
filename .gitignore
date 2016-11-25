@@ -9,8 +9,8 @@ wordpress/*
 wordpress/wp-content/*
 !wordpress/wp-content/themes/
 wordpress/wp-content/themes/*
-!wordpress/wp-content/themes/espacep/
+!wordpress/wp-content/themes/csiangleur/
 /npm-debug.log
-/wordpress/wp-content/themes/espacep/assets/images.safecopy
+/wordpress/wp-content/themes/csiangleur/assets/images.safecopy
 /-$
 /source/scripts/jquery.flexnav.js
