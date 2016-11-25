@@ -228,3 +228,20 @@
         &:focus
           background-color color-lightblue
           transition .3s background-color ease
+
+@media screen and (max-width 938px)
+  .contact
+    .content
+      &__bottom
+        display: block
+      &__form
+        form
+          max-width none
+
+  .contact .content__form .names
+    display: block
+  .contact .content__form .names__name
+    width 100%
+
+  .contact .content__horaires
+    max-width none
