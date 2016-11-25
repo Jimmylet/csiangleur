@@ -28,6 +28,9 @@
     &__img
       display: block
       border-radius 2px
+      min-height 20em
+      background-size cover
+      background-position center center
     &__title
       position: absolute
       top 20%
@@ -137,6 +140,22 @@
 
 
 
+@media screen and (max-width: 633px)
+  .archives
+    .article-highlight
+      &__title
+        font bold 1.5em Oxygen, Helvetica, Arial, sans-serif
+        line-height: 1.4
+      &__link
+        top auto
+        bottom 20%
 
-
+@media screen and (max-width: 523px)
+  .archives
+    .article
+      &__button
+        margin-left auto
+        margin-right auto
+        left 20px
+        right 20px
 
