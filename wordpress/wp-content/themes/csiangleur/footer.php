@@ -1,16 +1,26 @@
 <footer class="footer">
 	<div class="footer__wrap">
-		<div class="col col1"><span class="col__title"><abbr title="Centre de Santé Intégré">C.S.I.</abbr> d’Angleur</span><span class="col__text">48, Rue Vaudrée</span><span class="col__text">4031 Angleur</span><span class="col__text">TEL&nbsp;: 085/21.11.13</span><a class="col1__button" href="#" title="Vers…">Nous contacter</a></div>
+		<div class="col col1">
+			<span class="col__title">
+				<abbr title="Centre de Santé Intégré">C.S.I.</abbr> d’Angleur
+			</span>
+			<span class="col__text"><?php the_field('opt_rue', 'options'); ?></span>
+			<span class="col__text"><?php the_field('opt_city', 'options'); ?></span>
+			<span class="col__text">TEL&nbsp;: <?php the_field('opt_tel', 'options'); ?></span>
+			<a class="col1__button" href="#" title="Vers…">Nous contacter</a></div>
 		<div class="col col2"><span class="col__title">Nos horaires</span>
-			<div class="col2__horaires"><span class="col__text col__text--week">Lundi - Vendredi</span><span class="col__text col__text--hour">9:00 - 19:00</span></div>
-			<div class="col2__horaires col2__horaires--2"><span class="col__text">Samedi</span><span class="col__text col__text--hour">9:00 - 12:00</span></div><span class="col__text col__text--nohour">En dehors de ces heures ?</span><span class="col__text">Voir le<a class="col__text--nohourlink" href="garde.html" title="Vers…"> service de garde</a>.</span>
+			<?php if( have_rows('opt_horaires', 'option') ): ?>
+			<?php while( have_rows('opt_horaires', 'option') ): the_row(); ?>
+				<div class="col2__horaires">
+					<span class="col__text col__text--week"><?php the_sub_field('jours'); ?></span>
+					<span class="col__text col__text--hour"><?php the_sub_field('heures'); ?></span>
+				</div>
+			<?php endwhile; ?>
+			<?php endif; ?>
+			<span class="col__text col__text--nohour">En dehors de ces heures ?</span><span class="col__text">Voir le<a class="col__text--nohourlink" href="garde.html" title="Vers…"> service de garde</a>.</span>
 		</div>
 		<div class="col col3"><span class="col__title">Restez informé sur nos activités</span>
-			<form class="newsletter-form">
-				<label for="newsletterfooter">Ecrivez votre adresse email :</label>
-				<input class="newsletter-form__input" type="email" name="newsletter" id="newsletterfooter" placeholder="Votre adresse email ici" required>
-				<button type="submit">S’inscrire</button>
-			</form>
+			<?php echo do_shortcode('[mc4wp_form id="25"]'); ?>
 			<div class="col3__wrap-links"><a class="col3__fb" href="#" title="Vers"><span>Notre facebook</span></a>
 				<div class="col3__sublinks"><a href="#" title="Vers">Consultez nos liens utile</a><a href="#" title="Vers">Lisez nos fiches pratique</a></div>
 			</div>
