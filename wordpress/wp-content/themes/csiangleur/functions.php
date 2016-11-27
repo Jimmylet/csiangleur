@@ -14,8 +14,8 @@ function my_jquery_enqueue() {
 show_admin_bar(false);
 
 // Définir chemin raccourcis
-// $images = get_template_directory_uri() . '/assets/images';
-// $scripts = get_template_directory_uri() . '/assets/scripts';
+$images = get_template_directory_uri() . '/assets/images/';
+$scripts = get_template_directory_uri() . '/assets/scripts';
 
 
 // Postypes
