@@ -2131,7 +2131,9 @@ mc4wp-form-2 .mc4wp-error p
     letter-spacing: 1px;
 }
 .maisonmedicaleauforfait .forfait__paragraph,
-.maisonmedicaleauforfait .philo__paragraph
+.maisonmedicaleauforfait .philo__paragraph,
+.maisonmedicaleauforfait .forfait p,
+.maisonmedicaleauforfait .philo p
 {
     font-size: .9em;
     line-height: 1.6;
@@ -2141,7 +2143,9 @@ mc4wp-form-2 .mc4wp-error p
     letter-spacing: .1px;
 }
 .maisonmedicaleauforfait .forfait__paragraph a,
-.maisonmedicaleauforfait .philo__paragraph a
+.maisonmedicaleauforfait .philo__paragraph a,
+.maisonmedicaleauforfait .forfait p a,
+.maisonmedicaleauforfait .philo p a
 {
     font-size: 1em;
     font-weight: bold;
@@ -2153,8 +2157,12 @@ mc4wp-form-2 .mc4wp-error p
 }
 .maisonmedicaleauforfait .forfait__paragraph a:hover,
 .maisonmedicaleauforfait .philo__paragraph a:hover,
+.maisonmedicaleauforfait .forfait p a:hover,
+.maisonmedicaleauforfait .philo p a:hover,
 .maisonmedicaleauforfait .forfait__paragraph a:focus,
-.maisonmedicaleauforfait .philo__paragraph a:focus
+.maisonmedicaleauforfait .philo__paragraph a:focus,
+.maisonmedicaleauforfait .forfait p a:focus,
+.maisonmedicaleauforfait .philo p a:focus
 {
     -webkit-transition: .3s color ease;
             transition: .3s color ease;
@@ -2162,7 +2170,13 @@ mc4wp-form-2 .mc4wp-error p
     color: #2883d2;
 }
 .maisonmedicaleauforfait .forfait__paragraph strong,
-.maisonmedicaleauforfait .philo__paragraph strong
+.maisonmedicaleauforfait .philo__paragraph strong,
+.maisonmedicaleauforfait .forfait p strong,
+.maisonmedicaleauforfait .philo p strong,
+.maisonmedicaleauforfait .forfait__paragraph b,
+.maisonmedicaleauforfait .philo__paragraph b,
+.maisonmedicaleauforfait .forfait p b,
+.maisonmedicaleauforfait .philo p b
 {
     font-size: 1em;
     font-weight: bold;
