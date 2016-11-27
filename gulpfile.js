@@ -51,7 +51,8 @@ var
     cssStylus = {
       in: source + 'stylus/main.styl',
       watch: [source + 'stylus/**/*'],
-      out: dest + 'css/'
+      /*out: dest + 'css/'*/
+      out: 'wordpress/wp-content/themes/espacep/assets/css/'
     },
 
     jsOpts = {
