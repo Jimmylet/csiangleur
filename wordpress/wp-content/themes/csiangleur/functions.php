@@ -8,12 +8,16 @@ function my_jquery_enqueue() {
     wp_enqueue_script('jquery');
 }
 
+// Thumbnails
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'thumb-photo-maison', 798, 293, false );
+
 
 // Options ACF
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 	acf_add_options_sub_page('Horaires');
-	acf_add_options_sub_page('Informations');
+	acf_add_options_sub_page('Footer');
 }
 
 // Class mailchimp
