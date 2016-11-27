@@ -246,7 +246,7 @@ img
     max-width: 100%;
     height: auto;
 }
-.mc4wp-alert p
+mc4wp-form-1 .mc4wp-alert p
 {
     font-size: .8em;
 
@@ -254,13 +254,26 @@ img
 
     letter-spacing: .3px;
 }
-.mc4wp-success p
+mc4wp-form-1 .mc4wp-success p
 {
     color: #138913;
 }
-.mc4wp-error p
+mc4wp-form-1 .mc4wp-error p
 {
     color: #c10a0a;
+}
+mc4wp-form-2 .mc4wp-alert p
+{
+    font-size: .8em;
+
+    margin-top: .5em;
+
+    letter-spacing: .3px;
+}
+mc4wp-form-2 .mc4wp-success p,
+mc4wp-form-2 .mc4wp-error p
+{
+    color: #fff;
 }
 .menu
 {
@@ -1826,6 +1839,7 @@ img
 }
 .footer .col__text--nohour
 {
+    margin-top: 1.1em;
     margin-bottom: 0;
 }
 .footer .col__text--nohourlink
@@ -1882,10 +1896,6 @@ img
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
             justify-content: space-between;
-}
-.footer .col2__horaires--2
-{
-    margin-bottom: 1.1em;
 }
 .footer .col3 .newsletter-form
 {
@@ -2100,6 +2110,16 @@ img
     max-width: 40em;
     margin: 0 auto;
 }
+.maisonmedicaleauforfait .forfait__wrap p,
+.maisonmedicaleauforfait .philo__wrap p
+{
+    font-size: .9em;
+    line-height: 1.6;
+
+    margin-bottom: 1.111em;
+
+    letter-spacing: .1px;
+}
 .maisonmedicaleauforfait .forfait__title,
 .maisonmedicaleauforfait .philo__title
 {
@@ -2201,14 +2221,18 @@ img
 .maisonmedicaleauforfait .forfait__card strong,
 .maisonmedicaleauforfait .philo__card strong
 {
+    font-family: Oxygen, Helvetica, Arial, sans-serif;
+
     color: #2670b1;
 }
 .maisonmedicaleauforfait .forfait__card p,
 .maisonmedicaleauforfait .philo__card p
 {
-    font-size: .8em;
+    font-size: 16px;
 
     margin-bottom: 0;
+
+    letter-spacing: 0;
 
     color: #737373;
 }
