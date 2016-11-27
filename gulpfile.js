@@ -52,7 +52,7 @@ var
       in: source + 'stylus/main.styl',
       watch: [source + 'stylus/**/*'],
       /*out: dest + 'css/'*/
-      out: 'wordpress/wp-content/themes/espacep/assets/css/'
+      out: 'wordpress/wp-content/themes/csiangleur/assets/css/'
     },
 
     jsOpts = {
