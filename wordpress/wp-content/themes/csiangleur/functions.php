@@ -16,6 +16,12 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_sub_page('Informations');
 }
 
+// Class mailchimp
+add_filter( 'mc4wp_form_css_classes', function( $classes ) {
+	$classes[] = 'newsletter-form';
+	return $classes;
+});
+
 // Désactiver la barre d’administration
 show_admin_bar(false);
 
