@@ -185,11 +185,8 @@ Template Name: Page d’accueil
 							<p>Les ateliers que nous proposons</p>
 						</li>
 					</ul>
-					<form class="newsletter-form">
-						<label for="newsletter">Ecrivez votre adresse email :</label>
-						<input class="newsletter-form__input" type="email" name="newsletter" id="newsletter" placeholder="Votre adresse email ici" required>
-						<button type="submit">S’inscrire</button>
-					</form><span class="newsletter-out">Vous pourrez vous désinscrire à tout moment.</span>
+					<?php echo do_shortcode('[mc4wp_form id="25"]'); ?>
+					<span class="newsletter-out">Vous pourrez vous désinscrire à tout moment.</span>
 				</div>
 			</div>
 		</section>

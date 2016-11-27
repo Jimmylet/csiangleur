@@ -246,6 +246,22 @@ img
     max-width: 100%;
     height: auto;
 }
+.mc4wp-alert p
+{
+    font-size: .8em;
+
+    margin-top: .5em;
+
+    letter-spacing: .3px;
+}
+.mc4wp-success p
+{
+    color: #138913;
+}
+.mc4wp-error p
+{
+    color: #c10a0a;
+}
 .menu
 {
     position: relative;
