@@ -9,6 +9,12 @@ function my_jquery_enqueue() {
 }
 
 
+// Options ACF
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+	acf_add_options_sub_page('Horaires');
+	acf_add_options_sub_page('Informations');
+}
 
 // Désactiver la barre d’administration
 show_admin_bar(false);

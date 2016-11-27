@@ -6,7 +6,7 @@ Template Name: Page d’accueil
 <html lang="fr">
 <head>
 	<title><?php echo bloginfo(); ?></title>
-	<meta name="description" content="<?php /*echo the_field("meta-description"); */?>">
+	<meta name="description" content="<?php echo the_field("meta-description"); ?>">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/main.css'; ?>" type="text/css">
@@ -43,7 +43,7 @@ Template Name: Page d’accueil
 				</g>
 			</svg>
 		</div><span class="intro__title"><?php echo bloginfo(); ?></span>
-		<p class="intro__paragraph">Le centre de santé intégré est une maison médicale composée d’une équipe pluridisciplinaire qui apporte des soins de qualités accessibles à tous.</p><a class="intro__button" href="#">Comment s’inscrire&nbsp;?</a>
+		<p class="intro__paragraph"><?php echo the_field("home_description"); ?></p><a class="intro__button" href="#">Comment s’inscrire&nbsp;?</a>
 	</div>
 	
 	<main>
@@ -58,8 +58,8 @@ Template Name: Page d’accueil
 							<path id="gear2" d="M44.9731313,45.0704451 L44.0383838,45.3191724 C44.0383838,45.3191724 43.489697,44.9975423 43.2139394,44.8388715 C43.0583838,44.9603762 42.8915152,45.0675862 42.7189899,45.1676489 C42.7515152,45.5393103 42.8179798,46.2769154 42.8179798,46.2769154 L42.1363636,46.967348 L40.0278788,47.1617555 L39.3448485,46.4713229 C39.3448485,46.4713229 39.2925253,45.8995361 39.2670707,45.6093542 C39.0379798,45.5478871 38.8187879,45.4649781 38.6080808,45.3706332 C38.3577778,45.5850533 37.8571717,46.0124639 37.8571717,46.0124639 C37.8571717,46.0124639 37.7709091,46.0596364 37.729899,46.0853668 C37.6874747,46.1110972 36.889899,46.0124639 36.889899,46.0124639 L35.5210101,44.3757241 L35.5210101,43.3979687 C35.5210101,43.3979687 36.0470707,42.9476865 36.310101,42.7218307 C36.2535354,42.5045517 36.219596,42.2786959 36.2040404,42.0485517 C35.8575758,41.8898809 35.1688889,41.5696803 35.1688889,41.5696803 L34.8917172,40.7591724 L34.9228283,40.6248025 L35.8066667,38.6792978 L36.7428283,38.4305705 C36.7428283,38.4305705 37.3367677,38.7035987 37.6337374,38.8422571 C37.8147475,38.6935925 38.0113131,38.560652 38.2177778,38.4405768 C38.1894949,38.0789216 38.1315152,37.3513229 38.1315152,37.3513229 L38.8145455,36.6608903 L40.9258586,36.4893542 L41.610303,37.1797868 C41.610303,37.1797868 41.6527273,37.7301317 41.6753535,38.0060188 C41.949697,38.0817806 42.2127273,38.1818433 42.4616162,38.303348 C42.6907071,38.104652 43.1488889,37.7072602 43.1488889,37.7072602 L44.1175758,37.7072602 L45.4991919,39.3368527 L45.4991919,40.3146082 C45.4991919,40.3146082 44.9391919,40.7991975 44.6577778,41.0422069 C44.700202,41.2394734 44.7214141,41.4424577 44.7313131,41.6497304 C45.0848485,41.8570031 45.7919192,42.2672602 45.7919192,42.2672602 L46.0365657,43.2135674 L44.9731313,45.0704451 Z M40.3488889,43.9840502 C41.5258691,43.9840502 42.48,43.0195789 42.48,41.8298433 C42.48,40.6401076 41.5258691,39.6756364 40.3488889,39.6756364 C39.1719087,39.6756364 38.2177778,40.6401076 38.2177778,41.8298433 C38.2177778,43.0195789 39.1719087,43.9840502 40.3488889,43.9840502 Z" fill="#EAEAEA"></path>
 						</g>
 					</svg>
-					<h2 class="services__item__title">Soutien<b> psychologique</b></h2>
-					<p class="services__item__paragraph">Bientôt, le C.S.I. d’Angleur accueillera un psychologue pour vous apporter du réconfort</p>
+					<h2 class="services__item__title"><?php the_field('home_service1_titre'); ?></h2>
+					<p class="services__item__paragraph"><?php the_field('home_service1_content'); ?></p>
 				</section>
 				<section class="services__item">
 					<svg width="75" height="75" xmlns="http://www.w3.org/2000/svg">
@@ -69,8 +69,8 @@ Template Name: Page d’accueil
 							<path id="heartline" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M14 40.9999792L27.2890137 40.9999792 31.5272881 26 36.97057 48.0081797 41.9228905 26.494272 44.964335 40.0372579 60.2930568 40.0372579"></path>
 						</g>
 					</svg>
-					<h2 class="services__item__title">Médecine<b> générale</b></h2>
-					<p class="services__item__paragraph">Plusieurs médecins diplômés vous reçoivent en consultation et vous prodigue des soins.</p>
+					<h2 class="services__item__title"><?php the_field('home_service2_titre'); ?></h2>
+					<p class="services__item__paragraph"><?php the_field('home_service2_content'); ?></p>
 				</section>
 				<section class="services__item">
 					<svg width="75" height="75" viewbox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421">
@@ -92,8 +92,8 @@ Template Name: Page d’accueil
 							</g>
 						</g>
             </svg>
-					<h2 class="services__item__title">Soins<b> infirmiers</b></h2>
-					<p class="services__item__paragraph">Le centre dispose d’infirmiers qualifiés apte à vous apporter vos soins.</p>
+					<h2 class="services__item__title"><?php the_field('home_service3_titre'); ?></h2>
+					<p class="services__item__paragraph"><?php the_field('home_service3_content'); ?></p>
 				</section>
 			</div><a class="services__button" href="" title="Voir tous les services proposé par la maison médicale d’Angleur">Voir tous les services</a>
 		</div>
@@ -112,8 +112,12 @@ Template Name: Page d’accueil
 				<section class="medecine__horaires">
 					<h2 class="medecine__horaires__title"> Vous désirez nous rendre visite ?</h2>
 					<ul class="medecine__horaires__list">
-						<li class="medecine__horaires__item"><span class="medecine__horaires__day">Lundi - Vendredi</span><span class="medecine__horaires__hour">8:00 - 19:00</span></li>
-						<li class="medecine__horaires__item"><span class="medecine__horaires__day">Samedi</span><span class="medecine__horaires__hour">9:00 - 12:00</span></li>
+						<?php if( have_rows('opt_horaires', 'option') ): ?>
+						<?php while( have_rows('opt_horaires', 'option') ): the_row(); ?>
+						<li class="medecine__horaires__item">
+							<span class="medecine__horaires__day"><?php the_sub_field('jours'); ?></span><span class="medecine__horaires__hour"><?php the_sub_field('heures'); ?></span></li>
+						<?php endwhile; ?>
+						<?php endif; ?>
 					</ul>
 					<p class="medecine__horaires__garde">En dehors de ces heures, vous pouvez bénéficier du<a href="#" title="Vers la page Service de garde"> service de garde</a>.</p><a class="medecine__horaires__button" href="#" title="Vers la page Service et Equipe">Voir les horaires par services</a>
 				</section>
