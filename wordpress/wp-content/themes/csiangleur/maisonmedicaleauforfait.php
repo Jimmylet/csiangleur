@@ -81,3 +81,5 @@ Template Name: Maison médicale au forfait
 		</div>
 	</section>
 </main>
+
+<?php include 'footer.php'; ?>
