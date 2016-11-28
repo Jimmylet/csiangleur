@@ -9,10 +9,10 @@
 		<div class="flexnav">
 			<div class="flexnav__wrap"><a class="flexnav__link" href="<?php echo home_url(); ?>">Accueil</a>
 				<div class="flexnav__dropwrap flexnav__dropwrap1"><span class="flexnav__dropbtn">Maison médicale</span>
-					<div class="flexnav__dropcnt flexnav__dropcnt1"><a class="flexnav__dropcnt__link" href="<?php echo the_permalink('33'); ?>">Maison médicale au forfait</a><a class="flexnav__dropcnt__link" href="servicesetequipe.html">Services et équipe</a></div>
+					<div class="flexnav__dropcnt flexnav__dropcnt1"><a class="flexnav__dropcnt__link" href="<?php echo the_permalink('33'); ?>">Maison médicale au forfait</a><a class="flexnav__dropcnt__link" href="<?php echo the_permalink('59'); ?>">Services et équipe</a></div>
 				</div>
 				<div class="flexnav__dropwrap flexnav__dropwrap2"><span class="flexnav__dropbtn">Fonctionnement</span>
-					<div class="flexnav__dropcnt flexnav__dropcnt2"><a class="flexnav__dropcnt__link" href="inscription.html">Inscription</a><a class="flexnav__dropcnt__link" href="desinscription.html">Désinscription</a></div>
+					<div class="flexnav__dropcnt flexnav__dropcnt2"><a class="flexnav__dropcnt__link" href="<?php the_permalink('106'); ?>">Inscription</a><a class="flexnav__dropcnt__link" href="<?php echo the_permalink('127'); ?>">Désinscription</a></div>
 				</div><a class="flexnav__link" href="garde.html">Service de garde</a><a class="flexnav__link" href="archive.html">Fiches pratiques</a><a class="flexnav__link" href="liens.html">Liens</a><a class="flexnav__link" href="contact.html">Contact</a>
 			</div>
 		</div>
