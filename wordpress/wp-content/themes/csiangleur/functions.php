@@ -11,6 +11,7 @@ function my_jquery_enqueue() {
 // Thumbnails
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'thumb-photo-maison', 798, 293, false );
+add_image_size( 'thumb-membre-equipe', 240, 155, true );
 
 
 // Options ACF
