@@ -2900,6 +2900,7 @@ mc4wp-form-2 .mc4wp-error p
 }
 .fonctionnement-inscription .questions li
 {
+    margin-bottom: 1.111em;
     margin-left: 1.5em;
 
     list-style: disc;
