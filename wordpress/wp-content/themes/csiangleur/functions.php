@@ -14,6 +14,7 @@ add_image_size( 'thumb-photo-maison', 798, 293, true );
 add_image_size( 'thumb-membre-equipe', 240, 155, true );
 add_image_size( 'thumb-article-top', 960, 400, true );
 add_image_size( 'thumb-article-bottom', 455, 240, true );
+add_image_size( 'thumb-single-post', 1200, 420, true );
 
 
 // Options ACF
