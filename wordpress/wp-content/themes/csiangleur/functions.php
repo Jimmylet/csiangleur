@@ -40,7 +40,6 @@ $scripts = get_template_directory_uri() . '/assets/scripts';
 // Postypes
 
 
-
 // Thumbnails
 
 

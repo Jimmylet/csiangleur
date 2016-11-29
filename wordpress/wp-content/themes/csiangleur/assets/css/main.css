@@ -279,6 +279,18 @@ mc4wp-form-2 .mc4wp-error p
 {
     color: #fff;
 }
+div.alm-reveal
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
 .menu
 {
     position: relative;
