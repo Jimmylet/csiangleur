@@ -10,8 +10,10 @@ function my_jquery_enqueue() {
 
 // Thumbnails
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'thumb-photo-maison', 798, 293, false );
+add_image_size( 'thumb-photo-maison', 798, 293, true );
 add_image_size( 'thumb-membre-equipe', 240, 155, true );
+add_image_size( 'thumb-article-top', 960, 400, true );
+add_image_size( 'thumb-article-bottom', 455, 240, true );
 
 
 // Options ACF
