@@ -66,16 +66,16 @@ ANIMATION HEADER
       transform translateY(0px)
       opacity 1
     .intro__logo
-      transition .8s .5s all ease-in-out
+      transition .8s all ease-in-out
       transition-property transform, opacity
     .intro__title
-      transition .8s .8s all ease-in-out
+      transition .8s .4s all ease-in-out
       transition-property transform, opacity
     .intro__paragraph
-      transition .8s 1.1s all ease-in-out
+      transition .8s 0.8s all ease-in-out
       transition-property transform, opacity
     .intro__button
-      transition .8s 2s all ease-out
+      transition .8s 1.4s all ease-out
       transition-property transform, opacity
 
 
@@ -221,25 +221,32 @@ ANIMATION HEADER
 #thermo{
   transform-origin 50% 50%
   animation 8s ease-in infinite thermo
+  height 1px
+  transform scaleY(1) rotate(180deg)
 }
 
 @keyframes thermo{
   0%{
-    transform: scaleY(0);
+    height 1px
+    /*transform: scaleY(0);*/
   }
   20%{
-    transform: scaleY(18);
+    height 10px
+    /*transform: scaleY(18);*/
   }
   40%{
-    transform: scaleY(18);
+    height 10px
+    /*transform: scaleY(18);*/
   }
 
   60%{
-    transform: scaleY(0);
+    height 1px
+    /*transform: scaleY(0);*/
   }
 
   100%{
-    transform: scaleY(0);
+    height 1px
+    /*transform: scaleY(0);*/
   }
 }
 

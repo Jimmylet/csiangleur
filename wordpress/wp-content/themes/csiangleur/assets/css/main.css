@@ -251,6 +251,17 @@ b
 {
     font-weight: bold;
 }
+.visuallyhidden
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 0;
+    margin: -1px;
+
+    border: 0;
+}
 mc4wp-form-1 .mc4wp-alert p
 {
     font-size: .8em;
@@ -979,14 +990,23 @@ div.wpcf7-validation-errors
 }
 .js-active .anim-intro .intro__logo
 {
-    -webkit-transition: .8s .5s all ease-in-out;
-            transition: .8s .5s all ease-in-out;
+    -webkit-transition: .8s all ease-in-out;
+            transition: .8s all ease-in-out;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: transform, opacity;
             transition-property: transform, opacity, -webkit-transform;
 }
 .js-active .anim-intro .intro__title
+{
+    -webkit-transition: .8s .4s all ease-in-out;
+            transition: .8s .4s all ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: transform, opacity;
+            transition-property: transform, opacity, -webkit-transform;
+}
+.js-active .anim-intro .intro__paragraph
 {
     -webkit-transition: .8s .8s all ease-in-out;
             transition: .8s .8s all ease-in-out;
@@ -995,19 +1015,10 @@ div.wpcf7-validation-errors
             transition-property: transform, opacity;
             transition-property: transform, opacity, -webkit-transform;
 }
-.js-active .anim-intro .intro__paragraph
-{
-    -webkit-transition: .8s 1.1s all ease-in-out;
-            transition: .8s 1.1s all ease-in-out;
-    -webkit-transition-property: opacity, -webkit-transform;
-            transition-property: opacity, -webkit-transform;
-            transition-property: transform, opacity;
-            transition-property: transform, opacity, -webkit-transform;
-}
 .js-active .anim-intro .intro__button
 {
-    -webkit-transition: .8s 2s all ease-out;
-            transition: .8s 2s all ease-out;
+    -webkit-transition: .8s 1.4s all ease-out;
+            transition: .8s 1.4s all ease-out;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: transform, opacity;
@@ -1143,6 +1154,11 @@ div.wpcf7-validation-errors
 }
 #thermo
 {
+    height: 1px;
+
+    -webkit-transform: scaleY(1) rotate(180deg);
+        -ms-transform: scaleY(1) rotate(180deg);
+            transform: scaleY(1) rotate(180deg);
     -webkit-transform-origin: 50% 50%;
         -ms-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
@@ -1826,56 +1842,56 @@ div.wpcf7-validation-errors
 {
     0%
     {
-        -webkit-transform: scaleY(0);
-                transform: scaleY(0);
+        height: 1px;
+        /*transform: scaleY(0);*/
     }
     20%
     {
-        -webkit-transform: scaleY(18);
-                transform: scaleY(18);
+        height: 10px;
+        /*transform: scaleY(18);*/
     }
     40%
     {
-        -webkit-transform: scaleY(18);
-                transform: scaleY(18);
+        height: 10px;
+        /*transform: scaleY(18);*/
     }
     60%
     {
-        -webkit-transform: scaleY(0);
-                transform: scaleY(0);
+        height: 1px;
+        /*transform: scaleY(0);*/
     }
     100%
     {
-        -webkit-transform: scaleY(0);
-                transform: scaleY(0);
+        height: 1px;
+        /*transform: scaleY(0);*/
     }
 }
 @keyframes thermo
 {
     0%
     {
-        -webkit-transform: scaleY(0);
-                transform: scaleY(0);
+        height: 1px;
+        /*transform: scaleY(0);*/
     }
     20%
     {
-        -webkit-transform: scaleY(18);
-                transform: scaleY(18);
+        height: 10px;
+        /*transform: scaleY(18);*/
     }
     40%
     {
-        -webkit-transform: scaleY(18);
-                transform: scaleY(18);
+        height: 10px;
+        /*transform: scaleY(18);*/
     }
     60%
     {
-        -webkit-transform: scaleY(0);
-                transform: scaleY(0);
+        height: 1px;
+        /*transform: scaleY(0);*/
     }
     100%
     {
-        -webkit-transform: scaleY(0);
-                transform: scaleY(0);
+        height: 1px;
+        /*transform: scaleY(0);*/
     }
 }
 .footer
