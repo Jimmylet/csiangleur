@@ -4246,3 +4246,73 @@ div.wpcf7-validation-errors
         top: -2em;
     }
 }
+.page-error__title
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 0;
+    margin: -1px;
+
+    border: 0;
+}
+.page-error .bandeau
+{
+    background-image: url('../images/bandeau_404.jpg');
+}
+.page-error .content
+{
+    max-width: 48em;
+    margin: 5em auto;
+    padding: 0 1em;
+
+    text-align: center;
+}
+.page-error .content__oops
+{
+    font-size: 2em;
+
+    display: block;
+
+    margin-bottom: .25em;
+
+    color: #c10a0a;
+}
+.page-error .content__title
+{
+    font-size: 1.5em;
+
+    margin-bottom: 1em;
+
+    color: #737373;
+}
+.page-error .content p
+{
+    max-width: 25em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+
+    color: #737373;
+}
+.page-error .content__link
+{
+    display: inline-block;
+
+    padding: .5em 1em;
+
+    -webkit-transition: .2s background-color ease;
+            transition: .2s background-color ease;
+
+    color: #fff;
+    border-radius: 2px;
+    background-color: #2670b1;
+}
+.page-error .content__link:hover,
+.page-error .content__link:focus
+{
+    -webkit-transition: .3s background-color ease;
+            transition: .3s background-color ease;
+
+    background-color: #2883d2;
+}
