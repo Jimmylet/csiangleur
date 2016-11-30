@@ -43,7 +43,7 @@ Template Name: Page d’accueil
 				</g>
 			</svg>
 		</div><span class="intro__title"><?php echo bloginfo(); ?></span>
-		<p class="intro__paragraph"><?php echo the_field("home_description"); ?></p><a class="intro__button" href="#">Comment s’inscrire&nbsp;?</a>
+		<p class="intro__paragraph"><?php echo the_field("home_description"); ?></p><a class="intro__button" href="<?php the_permalink('106'); ?>">Comment s’inscrire&nbsp;?</a>
 	</div>
 	
 	<main>
@@ -95,17 +95,25 @@ Template Name: Page d’accueil
 					<h2 class="services__item__title"><?php the_field('home_service3_titre'); ?></h2>
 					<p class="services__item__paragraph"><?php the_field('home_service3_content'); ?></p>
 				</section>
-			</div><a class="services__button" href="" title="Voir tous les services proposé par la maison médicale d’Angleur">Voir tous les services</a>
+			</div><a class="services__button" href="<?php the_permalink('59');?>" title="Voir tous les services proposé par la maison médicale d’Angleur">Voir tous les services</a>
 		</div>
 		<section class="medecine">
 			<div class="medecine__wrap">
 				<div class="medecine__wrapright">
 					<h2 class="medecine__title"> Une médecine de qualité accessible à tous.</h2>
-					<div class="medecine__fiches"><span class="medecine__fiches__title">Dernières fiches pratique&nbsp;:</span>
+					<div class="medecine__fiches">
+						<span class="medecine__fiches__title">Dernières fiches pratique&nbsp;:</span>
 						<ul class="medecine__fiches__list">
-							<li class="medecine__fiches__item"><a class="medecine__fiches__link" href="#">Manger équilibré, c’est important</a></li>
-							<li class="medecine__fiches__item"><a class="medecine__fiches__link" href="#">Faites vos vaccins</a></li>
-							<li class="medecine__fiches__item"><a class="medecine__fiches__link" href="#">Lorem ipsum dolor sit amet</a></li>
+							<?php
+							$posts = new WP_Query( ['posts_per_page' => 3, 'post_type' => 'post'] );
+							if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
+							?>
+							<li class="medecine__fiches__item">
+								<a class="medecine__fiches__link" href="<?php the_permalink();?>">
+									<?php echo the_title(); ?>
+								</a>
+							</li>
+							<?php endwhile; endif; ?>
 						</ul>
 					</div>
 				</div>
@@ -119,7 +127,7 @@ Template Name: Page d’accueil
 						<?php endwhile; ?>
 						<?php endif; ?>
 					</ul>
-					<p class="medecine__horaires__garde">En dehors de ces heures, vous pouvez bénéficier du<a href="#" title="Vers la page Service de garde"> service de garde</a>.</p><a class="medecine__horaires__button" href="#" title="Vers la page Service et Equipe">Voir les horaires par services</a>
+					<p class="medecine__horaires__garde">En dehors de ces heures, vous pouvez bénéficier du<a href="<?php the_permalink('155');?>" title="Vers la page Service de garde"> service de garde</a>.</p><a class="medecine__horaires__button" href="<?php the_permalink('59'); ?>" title="Vers la page Service et Equipe">Voir les horaires par services</a>
 				</section>
 			</div>
 		</section>

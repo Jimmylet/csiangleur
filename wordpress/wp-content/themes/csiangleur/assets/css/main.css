@@ -524,6 +524,36 @@ div.wpcf7-validation-errors
 
     opacity: 1;
 }
+.flexnav .open
+{
+    z-index: 10;
+
+    visibility: visible;
+
+    height: auto;
+
+    -webkit-transition: .5s all ease;
+            transition: .5s all ease;
+    -webkit-transition-property: height, opacity, visibility;
+            transition-property: height, opacity, visibility;
+
+    opacity: 1;
+}
+.no-js .flexnav .flexnav__dropcnt
+{
+    z-index: 10;
+
+    visibility: visible;
+
+    height: auto;
+
+    -webkit-transition: .5s all ease;
+            transition: .5s all ease;
+    -webkit-transition-property: height, opacity, visibility;
+            transition-property: height, opacity, visibility;
+
+    opacity: 1;
+}
 @media screen and (max-width: 1024px)
 {
     .menu-button

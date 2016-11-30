@@ -7,7 +7,7 @@
 			<span class="col__text"><?php the_field('opt_rue', 'options'); ?></span>
 			<span class="col__text"><?php the_field('opt_city', 'options'); ?></span>
 			<span class="col__text">TEL&nbsp;: <?php the_field('opt_tel', 'options'); ?></span>
-			<a class="col1__button" href="#" title="Vers…">Nous contacter</a></div>
+			<a class="col1__button" href="<?php the_permalink('267');?>" title="Vers…">Nous contacter</a></div>
 		<div class="col col2"><span class="col__title">Nos horaires</span>
 			<?php if( have_rows('opt_horaires', 'option') ): ?>
 			<?php while( have_rows('opt_horaires', 'option') ): the_row(); ?>
@@ -22,7 +22,7 @@
 		<div class="col col3"><span class="col__title">Restez informé sur nos activités</span>
 			<?php echo do_shortcode('[mc4wp_form id="25"]'); ?>
 			<div class="col3__wrap-links"><a class="col3__fb" href="#" title="Vers"><span>Notre facebook</span></a>
-				<div class="col3__sublinks"><a href="#" title="Vers">Consultez nos liens utile</a><a href="#" title="Vers">Lisez nos fiches pratique</a></div>
+				<div class="col3__sublinks"><a href="<?php the_permalink('259'); ?>" title="Vers">Consultez nos liens utile</a><a href="<?php the_permalink('178'); ?>" title="Vers">Lisez nos fiches pratique</a></div>
 			</div>
 		</div>
 	</div><span class="copyright">©<abbr title="Centre de Santé intégré"> C.S.I.</abbr> Angleur - Tous droits réservés. Design by<a href="http://letecheur.me"> Jimmy Letecheur</a></span>

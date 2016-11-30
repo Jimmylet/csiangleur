@@ -103,6 +103,9 @@
 .flexnav__dropwrap:hover .flexnav__dropbtn
   padding 0 0 10px 0
 
+
+
+
 .flexnav__dropwrap:hover .flexnav__dropcnt
   z-index 10
   transition .5s all ease
@@ -110,6 +113,27 @@
   height auto
   opacity 1
   visibility visible
+
+
+.flexnav
+  .open
+    z-index 10
+    transition .5s all ease
+    transition-property height, opacity, visibility
+    height auto
+    opacity 1
+    visibility visible
+
+.no-js
+  .flexnav
+    .flexnav__dropcnt
+      z-index 10
+      transition .5s all ease
+      transition-property height, opacity, visibility
+      height auto
+      opacity 1
+      visibility visible
+
 
 @media screen and ( max-width: 1024px )
   .menu-button

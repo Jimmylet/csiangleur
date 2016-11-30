@@ -52,7 +52,7 @@ Template Name: Maison médicale au forfait
 					<p>C’est un contrat entre vous, votre mutualité et la maison médicale avec des droits et devoirs pour chacun.</p>
 				</div>
 				<div class="forfait__card"><span>Une<strong> inscription</strong> ?</span>
-					<p>Pour profiter des services de la maison médicale, il est nécessaire de<a href="inscription.html"> s’inscrire</a> au préalable.</p>
+					<p>Pour profiter des services de la maison médicale, il est nécessaire de<a href="<?php the_permalink('106'); ?>"> s’inscrire</a> au préalable.</p>
 				</div>
 			</div>
 			

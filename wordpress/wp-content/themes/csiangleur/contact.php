@@ -67,7 +67,7 @@ Template Name: Contact
 						</tr>
 						<?php endwhile; ?>
 						<?php endif; ?>
-					</table><span class="content__horaires__text">En dehors de ces heures, vous pouvez bénéficier du<a href="garde.html" title="Vers"> service de garde</a>.</span><a class="content__horaires__button" href="servicesetequipe.html" title="Vers">Voir les horaires par services et par thérapeute.</a>
+					</table><span class="content__horaires__text">En dehors de ces heures, vous pouvez bénéficier du<a href="<?php the_permalink('155');?>" title="Vers"> service de garde</a>.</span><a class="content__horaires__button" href="<?php the_permalink('59'); ?>" title="Vers">Voir les horaires par services et par thérapeute.</a>
 				</section>
 			</div>
 		</div>
