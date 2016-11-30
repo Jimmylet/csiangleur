@@ -29,14 +29,18 @@
 </footer>
 
 <?php wp_footer(); ?>
+
 <script src="<?php echo $scripts . '/jquery.viewportchecker.js'; ?>"></script>
-<script src="<?php echo $scripts . '/compressed.js'; ?>"></script>
+<script src="<?php echo $scripts . '/compressed.js';?>"></script>
+<!--<script src="<?php /*echo $scripts . '/floatLabels.js'; */?>"></script>-->
 
 <?php if (is_page(5)): ?>
 	<script>
 		!function(a){a(".intro").viewportChecker({classToAdd:"anim-intro",offset:0,repeat:!1}),a(".newsletter").viewportChecker({classToAdd:"anim-titles",offset:120,repeat:!1}),a(".newsletter__animate-content").viewportChecker({classToAdd:"animate-content-newsletter",offset:50,repeat:!1})}(jQuery);
 	</script>
 <?php endif; ?>
+
+
 </body>
 </html>
 

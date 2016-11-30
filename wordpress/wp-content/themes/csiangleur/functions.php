@@ -44,7 +44,13 @@ $scripts = get_template_directory_uri() . '/assets/scripts';
 // Thumbnails
 
 
+// Remove JS contact form 7
+/*add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
 
+function ac_remove_cf7_scripts() {
+	wp_deregister_style( 'contact-form-7' );
+	wp_deregister_script( 'contact-form-7' );
+}*/
 
 
 
@@ -85,4 +91,6 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 	return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" style="max-width: ' . $width . 'px">' . do_shortcode( $content ) . '<p class="wp-caption-text">' . $caption . '</p></div>';
 }
 
-// Change articles name
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+

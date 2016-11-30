@@ -319,6 +319,10 @@ div.alm-reveal
 {
     display: none;
 }
+.active
+{
+    color: #2883d2;
+}
 .flexnav
 {
     position: relative;
@@ -3479,6 +3483,7 @@ div.alm-reveal
 .contact .content__form .email label
 {
     position: absolute;
+    z-index: 10;
     top: 7px;
     left: 10px;
 
@@ -3518,6 +3523,7 @@ div.alm-reveal
 .contact .content__form .message__label
 {
     position: absolute;
+    z-index: 10;
     top: 10px;
     left: 10px;
 

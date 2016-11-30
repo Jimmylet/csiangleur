@@ -34,16 +34,20 @@ html(lang='fr')
                                 div.names
                                     div.names__name
                                         label.names__name__label.fLabel(for="firstname") Votre prénom *
-                                        input.names__name__input(type="text" id="firstname" required)
+                                        span
+                                            input.names__name__input.forFloat(type="text" id="firstname" required)
                                     div.names__name
                                         label.names__name__label.fLabel(for="name") Votre nom *
-                                        input.names__name__input(type="text" id="name" required)
+                                        span
+                                            input.names__name__input.forFloat(type="text" id="name" required)
                                 div.email
                                     label.email__label.fLabel(for="email") Votre adresse email *
-                                    input.email__input(type="text" id="email" required)
+                                    span
+                                        input.email__input.forFloat(type="text" id="email" required)
                                 div.message
                                     label.message__label.fLabel(for="message") Votre message *
-                                    textarea.message__textarea(id="message")
+                                    span
+                                        textarea.message__textarea.forFloat(id="message")
                                 input.send(type="submit" value="Envoyer le message")
                                 span.requiredFields Les champs marqués d’une étoile (*) sont obligatoire.
                         section.content__horaires
