@@ -62,7 +62,7 @@ Template Name: Services et équipe
 							<span class="equipe__name"><?php echo the_sub_field('nom-membre');?></span>
 							<span class="equipe__role"><?php echo the_sub_field('profession-membre');?></span>
 							<div class="equipe__dispo">
-								<span class="equipe__dispo__clic">Voir les disponibilités</span>
+								<a href="#" class="equipe__dispo__clic">Voir les disponibilités <span class="visuallyhidden">de <?php echo the_sub_field('nom-membre');?></span></a>
 								<div class="equipe__dispo__horaire">
 									<table>
 										<tbody>
@@ -131,7 +131,7 @@ Template Name: Services et équipe
 								<span class="equipe__name"><?php echo the_sub_field('service_membre_name');?></span>
 								<span class="equipe__role"><?php echo the_sub_field('service_membre_profession');?></span>
 								<div class="equipe__dispo">
-									<span class="equipe__dispo__clic">Voir les disponibilités</span>
+									<a href="#" class="equipe__dispo__clic">Voir les disponibilités</a>
 									<div class="equipe__dispo__horaire">
 										<table>
 											<tbody>

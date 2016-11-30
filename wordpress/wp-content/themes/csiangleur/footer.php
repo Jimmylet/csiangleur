@@ -40,7 +40,28 @@
 	</script>
 <?php endif; ?>
 
+<script>
+    $(".flexnav__dropbtn1").focus(function(){
+        $('.flexnav__dropcnt1').addClass("open");
+    });
+		
+    $(".flexnav__dropbtn2").focus(function(){
+        $('.flexnav__dropcnt2').addClass("open");
+    });
 
+    $(".flexnav__dropbtn2").focus(function(){
+        $('.flexnav__dropcnt1').removeClass("open");
+    });
+
+    $(".flexnav__dropbtn1").focus(function(){
+        $('.flexnav__dropcnt2').removeClass("open");
+    });
+
+    $(".flexnav__link").focus(function(){
+        $('.flexnav__dropcnt').removeClass("open");
+    });
+	
+</script>
 </body>
 </html>
 

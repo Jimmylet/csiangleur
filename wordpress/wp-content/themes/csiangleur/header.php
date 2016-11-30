@@ -1,18 +1,18 @@
 <header class="header">
 	<nav class="menu">
 		<h2 class="menu__title">Menu de navigation</h2>
-		<div class="menu-button">
+		<a href="#" class="menu-button">
 			<div class="menu-button__wrap"><span class="menu-button__label">Menu</span>
 				<div class="nav-icon"><span></span><span></span><span></span><span></span></div>
 			</div>
-		</div>
+		</a>
 		<div class="flexnav">
 		<?php global $post; $thePostID = $post->ID; ?>
 			<div class="flexnav__wrap"><a class="flexnav__link <?php echo $thePostID == 5 ? "active" : "" ;?>" href="<?php echo home_url(); ?>">
 					Accueil
 				</a>
 				<div class="flexnav__dropwrap flexnav__dropwrap1">
-					<a  href="#" class="flexnav__dropbtn <?php echo $thePostID == 33 || $thePostID == 59 ? "active" : "" ;?>" id="test">
+					<a  href="#" class="flexnav__dropbtn flexnav__dropbtn1 <?php echo $thePostID == 33 || $thePostID == 59 ? "active" : "" ;?>" id="test">
 						Maison médicale
 					</a>
 					<div class="flexnav__dropcnt flexnav__dropcnt1">
@@ -25,7 +25,7 @@
 					</div>
 				</div>
 				<div class="flexnav__dropwrap flexnav__dropwrap2">
-					<a href="#" class="flexnav__dropbtn <?php echo $thePostID == 106 || $thePostID == 127 ? "active" : "" ;?>">
+					<a href="#" class="flexnav__dropbtn flexnav__dropbtn2 <?php echo $thePostID == 106 || $thePostID == 127 ? "active" : "" ;?>">
 						Fonctionnement
 					</a>
 					<div class="flexnav__dropcnt flexnav__dropcnt2">
