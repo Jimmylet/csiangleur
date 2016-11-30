@@ -73,7 +73,7 @@ Template Name: Page d’accueil
 					<p class="services__item__paragraph"><?php the_field('home_service2_content'); ?></p>
 				</section>
 				<section class="services__item">
-					<svg width="75" height="75" viewbox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421">
+					<svg width="75" height="75" viewbox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421">
               <circle id="abcd" cx="37.5" cy="37.5" r="37.5" style="fill:#2670b1"></circle>
 						<g>
 							<circle id="a1" cx="37.5" cy="37.5" r="37.5" style="fill:#2670b1"></circle>
@@ -191,10 +191,6 @@ Template Name: Page d’accueil
 			</div>
 		</section>
 	</main>
-	
-	
-	
-	
 	
 	<?php include 'footer.php'; ?>
 
