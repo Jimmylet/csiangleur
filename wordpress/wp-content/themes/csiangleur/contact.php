@@ -9,8 +9,8 @@ Template Name: Contact
 	<meta name="description" content="<?php echo the_field("meta-description"); ?>">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/main.css'; ?>" type="text/css">
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/main.css'; ?>" type="text/css">
 </head>
 <body class="no-js contact">
 <h1 class="home__title"><?php echo the_title(); ?></h1>
@@ -19,7 +19,7 @@ Template Name: Contact
 
 <main>
 	
-	<section class="content">
+	<div class="content">
 		<div class="content__wrap">
 			<section class="content__infos">
 				<h2 class="content__infos__title-hide">
@@ -71,7 +71,7 @@ Template Name: Contact
 				</section>
 			</div>
 		</div>
-	</section>
+	</div>
 
 </main>
 

@@ -46,7 +46,7 @@
 				<a class="flexnav__link  <?php echo $thePostID == $compareID ? "active" : "" ;?>" href="<?php the_permalink('259'); ?>">
 					Liens
 				</a>
-				<a class="flexnav__link" href="contact.html">
+				<a class="flexnav__link" href="<?php the_permalink('267'); ?>">
 					Contact
 				</a>
 			</div>

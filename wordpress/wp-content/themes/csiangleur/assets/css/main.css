@@ -292,6 +292,41 @@ div.alm-reveal
     -ms-flex-pack: justify;
             justify-content: space-between;
 }
+span.wpcf7-not-valid-tip
+{
+    font-size: .75em;
+
+    position: relative;
+    top: -21px;
+
+    color: #c10a0a;
+}
+span.textarea-358 .wpcf7-not-valid-tip
+{
+    top: -3px;
+}
+div.wpcf7-response-output
+{
+    font-size: 15px;
+
+    margin: 10px 0 0 0;
+    padding: 0;
+
+    color: #c10a0a;
+}
+div.wpcf7-mail-sent-ng
+{
+    border: none;
+}
+div.wpcf7-mail-sent-ok
+{
+    color: #138913;
+    border: 0;
+}
+div.wpcf7-validation-errors
+{
+    border: 0;
+}
 .menu
 {
     position: relative;
@@ -3458,7 +3493,7 @@ div.alm-reveal
     font: normal 15px Oxygen, Helvetica, Arial, sans-serif;
 
     width: 100%;
-    min-height: 160px;
+    height: 200px;
     padding: 10px 10px;
 
     resize: none;
@@ -3617,8 +3652,8 @@ div.alm-reveal
 }
 .contact .content__horaires
 {
-    max-width: 388px;
-    margin-top: 45px;
+    max-width: 19.4em;
+    margin-top: 3.3em;
     padding: 1.5em;
 
     border-radius: 2px;
