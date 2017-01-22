@@ -21,23 +21,27 @@ Template Name: Contact
 	
 	<div class="content">
 		<div class="content__wrap">
-			<section class="content__infos">
+			<section class="content__infos vcard" itemscope itemtype="http://schema.org/Organization">
 				<h2 class="content__infos__title-hide">
 					Informations de contact
 				</h2>
-				<img class="content__infos__logo" src="<?php echo $images . '/svg/logomenu.svg'; ?>" width="107" height="107" alt="Logo du Centre de Santé intégré d’Angleur">
-				<span class="content__infos__title">
-					Centre de Santé intégré d’Angleur
-				</span>
-				<span class="content__infos__address">
-					<?php the_field('contact_adress'); ?>
-				</span>
-				<span class="content__infos__tel">
-					TEL&nbsp;: <?php the_field('contact_tel'); ?>
-				</span>
-				<span class="content__infos__fax">
-					FAX&nbsp;: <?php the_field('contact_fax'); ?>
-				</span>
+				<div class="postal-contact">
+					<img class="content__infos__logo" src="<?php echo $images . '/svg/logomenu.svg'; ?>" width="107" height="107" alt="Logo du Centre de Santé intégré d’Angleur">
+					<span class="content__infos__title org" itemprop="legalName">
+						Centre de Santé intégré d’Angleur
+					</span>
+					<span class="adr">
+						<span class="content__infos__address street-address" itemprop="address">
+							<?php the_field('contact_adress'); ?>
+						</span>
+					</span>
+					<span class="content__infos__tel tel" itemprop="telephone">
+						TEL&nbsp;: <?php the_field('contact_tel'); ?>
+					</span>
+					<span class="content__infos__fax tel" itemprop="faxNumber">
+						FAX&nbsp;: <?php the_field('contact_fax'); ?>
+					</span>
+				</div>
 			</section>
 			<a class="content__map" href="https://goo.gl/maps/qsiqPR4aT3S2" title="Vers google map">
 				<span>
