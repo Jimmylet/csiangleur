@@ -17,7 +17,7 @@
 				</div>
 			<?php endwhile; ?>
 			<?php endif; ?>
-			<span class="col__text col__text--nohour">En dehors de ces heures ?</span><span class="col__text">Voir le<a class="col__text--nohourlink" href="garde.html" title="Vers…"> service de garde</a>.</span>
+			<span class="col__text col__text--nohour">En dehors de ces heures ?</span><span class="col__text">Voir le<a class="col__text--nohourlink" href="<?php echo the_permalink('155'); ?>" title="Vers le service de garde"> service de garde</a>.</span>
 		</div>
 		<div class="col col3"><span class="col__title">Restez informé sur nos activités</span>
 			<?php echo do_shortcode('[mc4wp_form id="25"]'); ?>
@@ -32,7 +32,6 @@
 
 <script src="<?php echo $scripts . '/jquery.viewportchecker.js'; ?>"></script>
 <script src="<?php echo $scripts . '/compressed.js';?>"></script>
-<!--<script src="<?php /*echo $scripts . '/floatLabels.js'; */?>"></script>-->
 
 <?php if (is_page(5)): ?>
 	<script>
