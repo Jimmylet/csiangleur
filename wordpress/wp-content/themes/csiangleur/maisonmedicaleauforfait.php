@@ -15,17 +15,18 @@ Template Name: Maison médicale au forfait
 <body class="no-js maisonmedicaleauforfait">
 <h1 class="home__title"><?php echo the_title(); ?></h1>
 <?php include 'header.php'; ?>
-<div class="bandeau">
-	<span class="bandeau__title"><?php echo the_title(); ?></span>
-	<ol class="breadcrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<li class="breadcrumb__link" itemprop="title">
-			<a class="breadcrumb__link__text" itemprop="link" href="<?php echo home_url(); ?>" title="Aller vers l’accueil">Accueil &nbsp;/&nbsp;</a>
-		</li>
-		<li class="breadcrumb__link" itemprop="title">
-			<a class="breadcrumb__link__text" itemprop="link" href="<?php echo the_permalink(); ?>"><?php echo the_title(); ?></a>
-		</li>
-	</ol>
-</div>
+	<div class="bandeau">
+		<span class="bandeau__title"><?php echo the_title(); ?></span>
+		<ol class="breadcrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+			<li class="breadcrumb__link" itemprop="title">
+				<a class="breadcrumb__link__text" itemprop="link" href="<?php echo home_url(); ?>" title="Aller vers l’accueil">Accueil &nbsp;/&nbsp;</a>
+			</li>
+			<li class="breadcrumb__link" itemprop="title">
+				<a class="breadcrumb__link__text" itemprop="link" href="<?php echo the_permalink(); ?>"><?php echo the_title(); ?></a>
+			</li>
+		</ol>
+		<img src="<?php echo $images . "/svg/round-bandeau.svg" ;?>" alt="" class="round">
+	</div>
 <main>
 	<section class="forfait">
 		<div class="forfait__wrap">

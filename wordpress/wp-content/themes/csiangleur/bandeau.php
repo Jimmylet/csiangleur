@@ -8,4 +8,5 @@
 			<a class="breadcrumb__link__text" itemprop="link" href="<?php echo the_permalink(); ?>"><?php echo the_title(); ?></a>
 		</li>
 	</ol>
+	<img src="<?php echo $images . "/svg/round-bandeau.svg" ;?>" alt="" class="round">
 </div>
