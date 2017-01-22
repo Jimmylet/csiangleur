@@ -2633,6 +2633,14 @@ div.wpcf7-validation-errors
     background-image: -webkit-linear-gradient(top, #fff 23%, #f6f6f6 50%);
     background-image:         linear-gradient(-180deg, #fff 23%, #f6f6f6 50%);
 }
+.servicesequipe .content__info-horaire__title
+{
+    font-size: .9em;
+}
+.servicesequipe .content__info-horaire__wrap td
+{
+    font-size: .8em;
+}
 .servicesequipe figure
 {
     max-width: 12.55em;
@@ -2662,7 +2670,7 @@ div.wpcf7-validation-errors
 }
 .servicesequipe figcaption .equipe__role
 {
-    font-size: .6em;
+    font-size: .7em;
 
     display: block;
 
@@ -2676,7 +2684,7 @@ div.wpcf7-validation-errors
 }
 .servicesequipe figcaption .equipe__dispo__clic
 {
-    font-size: .6em;
+    font-size: .8em;
 
     display: block;
 
@@ -2709,7 +2717,7 @@ div.wpcf7-validation-errors
 }
 .servicesequipe figcaption .equipe__dispo table td
 {
-    font-size: .6em;
+    font-size: .7em;
 
     padding-right: 10px;
 
