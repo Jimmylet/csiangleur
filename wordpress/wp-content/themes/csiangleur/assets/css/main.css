@@ -2925,7 +2925,7 @@ div.wpcf7-validation-errors
 .fonctionnement-inscription .inscription__item:before,
 .fonctionnement-inscription .desinscription__item:before
 {
-    font: normal 1.3em Oxygen, Helvetica, Arial, sans-serif;
+    font: 600 1.3em Oxygen, Helvetica, Arial, sans-serif;
     line-height: 0;
 
     content: counters(section, '.') '. ';
@@ -2933,7 +2933,7 @@ div.wpcf7-validation-errors
 .fonctionnement-inscription .inscription__item__title,
 .fonctionnement-inscription .desinscription__item__title
 {
-    font: normal 1.3em Oxygen, Helvetica, Arial, sans-serif;
+    font: 600 1.3em Oxygen, Helvetica, Arial, sans-serif;
     line-height: 1.5;
 
     letter-spacing: .5px;
@@ -3014,7 +3014,7 @@ div.wpcf7-validation-errors
 }
 .fonctionnement-desinscription .desinscription__faq__title
 {
-    font: normal 1.3em Oxygen, Helvetica, Arial, sans-serif;
+    font: 600 1.3em Oxygen, Helvetica, Arial, sans-serif;
     line-height: 1.3;
 
     display: block;
