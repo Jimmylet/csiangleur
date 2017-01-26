@@ -1516,8 +1516,8 @@ div.wpcf7-validation-errors
 }
 .js-active .anim-titles .newsletter__title
 {
-    -webkit-transition: 1s all ease;
-            transition: 1s all ease;
+    -webkit-transition: .5s all ease;
+            transition: .5s all ease;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: transform, opacity;
@@ -1530,8 +1530,8 @@ div.wpcf7-validation-errors
 }
 .js-active .anim-titles .newsletter__subtitle
 {
-    -webkit-transition: 1s .3s all ease;
-            transition: 1s .3s all ease;
+    -webkit-transition: .5s .3s all ease;
+            transition: .5s .3s all ease;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: transform, opacity;
@@ -1552,8 +1552,8 @@ div.wpcf7-validation-errors
 }
 .js-active .animate-content-newsletter
 {
-    -webkit-transition: 1s 1s all ease;
-            transition: 1s 1s all ease;
+    -webkit-transition: .5s .4s all ease;
+            transition: .5s .4s all ease;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: transform, opacity;
